@@ -1,5 +1,5 @@
 ---
-title: "Angular 4 Dashboard with JWT"
+title: "Angular 554 Dashboard with JWT"
 layout: post
 date: 2016-01-23 22:10
 tag: angular
