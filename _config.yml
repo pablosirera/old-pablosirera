@@ -1,7 +1,8 @@
 # main text of home
 name: Pablo Sirera
 nameAlt: pablosirera
-bio: Hey, I'm web developer and apasionate of ecosystem JavaScript
+bio: Desarrollador web y apasionado del ecosistema JavaScript
+bio-en: Hey, I'm web developer and apasionate of ecosystem JavaScript
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -11,44 +12,28 @@ description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
 
-
 url: http://pablosirera.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
 
-# To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
-
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
-
 # if you don't have any of social below, comment the line
-# facebook: myfacebook
 twitter: pablosirera
-# google: mygoogle
 instagram: pablodeveloper
 linkedin: pablosireramata
 # youtube: myyoutube
-# spotify: myspotify
 github: pablosirera
-# lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
 # medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
 email: psirera4@gmail.com
 
-author:
-    pablosirera:
-        name: Pablo Sirera
-        bio: A Man who travels the world eating noodles
-        external-image: false
-        picture: assets/images/profile.jpg
-        twitter: pablosirera
+authors:
+  pablosirera:
+    name: Pablo Sirera
+    bio: A Man who travels the world of programming
+    external-image: false
+    picture: assets/images/profile.jpg
+    twitter: pablosirera
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -66,14 +51,8 @@ projects: true
 about: true
 blog: false
 
-# do you want to show the "read time" of the posts?
-read-time: true
-
 # do you want to show the "tags" inside the posts?
 show-tags: true
-
-# related posts inside a post?
-related: true
 
 # Display links for next and previous posts for the specified categories
 post-advance-links: [blog]
@@ -91,4 +70,4 @@ plugins:
   - jemoji
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
