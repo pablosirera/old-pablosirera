@@ -1,0 +1,5 @@
+.sass_cache
+_site
+Gemfile.lock
+_config-dev.yml
+.git
