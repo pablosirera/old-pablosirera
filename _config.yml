@@ -17,6 +17,10 @@ url: http://pablosirera.github.io
 
 permalink: /:title/
 
+# routes to images
+images: 
+  bootstrap: /assets/images/blog/bootstrap.png
+
 # if you don't have any of social below, comment the line
 twitter: pablosirera
 instagram: pablodeveloper
@@ -49,7 +53,7 @@ projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: false
+blog: true
 
 # do you want to show the "tags" inside the posts?
 show-tags: true

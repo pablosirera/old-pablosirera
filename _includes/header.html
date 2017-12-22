@@ -1,5 +1,4 @@
 {% if page.title == "Home"
-   or page.title == "Blog"
    or page.title == "Tags" %}
   {% assign showHeader = true %}
 {% endif %}
@@ -17,7 +16,7 @@
     {% endif %}
 
     <h1 class="title">{{ site.name }}</h1>
-    <h2 class="description">{{ site.bio }}</h2>
+    <h2 class="description">{{ site.bio-en }}</h2>
   </header>
 {% endif %}
 
