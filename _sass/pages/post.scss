@@ -47,6 +47,12 @@
         display: block;
         margin: 0 auto;
     }
+    .image-logo {
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
     & > .blog-navigation {
         font-size: 1.4rem;
         display: block;
