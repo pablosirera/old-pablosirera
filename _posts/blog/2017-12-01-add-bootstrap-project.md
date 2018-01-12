@@ -22,7 +22,7 @@ Para ello, nos iremos a la página oficial de [bootstrap](https://v4-alpha.getbo
 
 Cuando lo tengamos, en la terminal escribiremos:
 {% highlight html %}
-npm install --save bootstrap@4.0.0-beta.3
+npm install --save bootstrap@4.0.0-beta.2
 {% endhighlight %}
 
 Una vez finalizado nos iremos al archivo **angular-cli.json** que se aloja en la raíz de nuestro proyecto **Angular** y añadiremos la ruta del archivo _css_ de bootstrap en _node_modules_. Quedará así:
