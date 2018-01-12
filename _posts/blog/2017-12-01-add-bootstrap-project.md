@@ -22,7 +22,7 @@ Para ello, nos iremos a la página oficial de [bootstrap](https://v4-alpha.getbo
 
 Cuando lo tengamos, en la terminal escribiremos:
 {% highlight html %}
-`npm install --save bootstrap@4.0.0-beta.2`
+npm install --save bootstrap@4.0.0-beta.3
 {% endhighlight %}
 
 Una vez finalizado nos iremos al archivo **angular-cli.json** que se aloja en la raíz de nuestro proyecto **Angular** y añadiremos la ruta del archivo _css_ de bootstrap en _node_modules_. Quedará así:
@@ -48,8 +48,8 @@ Para que el JS de Bootstrap funcione necesita dos librerías más, una es **Jque
 
 Lanzamos los siguientes comandos:
 {% highlight html %}
-`npm install --save jquery`
-`npm install --save popper.js`
+npm install --save jquery
+npm install --save popper.js
 {% endhighlight %}
 
 Finalizado esto, nos iremos al archivo de configuración **angular-cli.json** y añadiremos las rutas con el siguiente resultado:
