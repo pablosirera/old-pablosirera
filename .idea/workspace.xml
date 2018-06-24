@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="049b0f44-a9f1-477a-8a44-8e89763958ff" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/202140c0b773de283b7b893751c34a7c263de2c5/minima.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/home-blog-projects.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/home-blog-projects.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/page.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/page.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/post.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/post.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/tags.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/59496e17fb6f2f2d314fe911653542cfbf5a3bd0/tags.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/72082b14a0c56ad5987080fdd5bbd4768f48edb3/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/72082b14a0c56ad5987080fdd5bbd4768f48edb3/_layout.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/72082b14a0c56ad5987080fdd5bbd4768f48edb3/_syntax-highlighting.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c4f1f124d47bcf12ed1b789dca3eba567f218e3f/jekyll-theme-architect.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c4f1f124d47bcf12ed1b789dca3eba567f218e3f/normalize.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c4f1f124d47bcf12ed1b789dca3eba567f218e3f/rouge-github.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c64c868884744bfd154dc17637b1b681d13abdf8/general.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c64c868884744bfd154dc17637b1b681d13abdf8/helpers.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c64c868884744bfd154dc17637b1b681d13abdf8/normalize.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c64c868884744bfd154dc17637b1b681d13abdf8/syntax.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/c64c868884744bfd154dc17637b1b681d13abdf8/variables.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d20d888a1d45989d39e063711a091b73d9f1c9ec/home-blog-projects.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d20d888a1d45989d39e063711a091b73d9f1c9ec/page.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d20d888a1d45989d39e063711a091b73d9f1c9ec/post.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d20d888a1d45989d39e063711a091b73d9f1c9ec/post.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d20d888a1d45989d39e063711a091b73d9f1c9ec/tags.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/author.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/footer.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/header.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/nav.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/others.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/pagination.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/related.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/share.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/side-by-side.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/social-links.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/d3ea1130b62b126ae2b96cc1f755f7b0ed75ca4a/spoiler.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/general.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/helpers.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/helpers.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/normalize.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/syntax.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/variables.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/dedb8326692d6c6c716c43726bf00cf1d3d2fe10/variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/author.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/author.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/disqus.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/footer.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/footer.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/header.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/header.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/nav.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/others.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/others.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/pagination.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/pagination.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/related.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/share.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/share.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/side-by-side.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/social-links.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/spoiler.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e5cc773917675c97dba754b2b462c40034faf3be/spoiler.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/blog-post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/read-time.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/compress.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/blog/2017-12-01-add-bootstrap-project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/projects/2017-11-01-angular-5-dashboard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/general.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/helpers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/author.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/others.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/share.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/side-by-side.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/social-links.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/spoiler.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pages/home-blog-projects.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pages/page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pages/post.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pages/tags.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/angular-5-dashboard/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/markdown.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tags/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/bootstrap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/markdown.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="actions.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/modules/language/actions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeaderContainer.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/HeaderContainer.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/store/modules/language/actions.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1280" />
+    <option name="y" value="-503" />
+    <option name="width" value="1920" />
+    <option name="height" value="1016" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pablosirera.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pablosirera.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pablosirera.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pablosirera.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pablosirera.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pablosirera.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pablosirera.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pablosirera.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pablosirera.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pablosirera.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pablosirera.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pablosirera.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="language" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="typescript-compiler-editor-notification" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="049b0f44-a9f1-477a-8a44-8e89763958ff" name="Default" comment="" />
+      <created>1529341133136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529341133136</updated>
+      <workItem from="1529341136261" duration="1324000" />
+      <workItem from="1529853567126" duration="437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1761000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1280" y="-503" width="1920" height="1016" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.159375" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/store/modules/language/actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/language/actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/HeaderContainer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
