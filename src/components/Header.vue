@@ -27,10 +27,6 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'AppHeader',
   props: {
-    onChangeLanguage: {
-      type: Function,
-      required: true
-    },
     language: {
       type: String,
       default: null

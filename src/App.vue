@@ -7,17 +7,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import router from './router'
 import AppHeader from '@/containers/HeaderContainer.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
     AppHeader
-  },
-  data: (isHomeRoute: Boolean) => ({
-    isHomeRoute: true
-  })
+  }
 })
 </script>
 

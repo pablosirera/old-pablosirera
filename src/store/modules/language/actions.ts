@@ -18,7 +18,7 @@ export async function changeLanguage(
     return
   }
 
-  const locale = await loadLanguageFile(language);
+  const locale = await loadLanguageFile(language)
   setLanguageAndLocale(language, locale)
   commit(languageMutationsTypes.LANGUAGE.FETCH.SUCCESS, { language })
   commit(languageMutationsTypes.LANGUAGE.SET, { language })
