@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeView from '@/views/Home.vue'
-import AboutView from '@/views/About.vue'
-import ProjectsView from '@/views/Projects.vue'
-import BlogView from '@/views/Blog.vue'
+import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
+import BlogView from '@/views/BlogView.vue'
 import { ROUTES } from './constants'
 
 Vue.use(Router)
