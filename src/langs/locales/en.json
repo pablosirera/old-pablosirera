@@ -1,3 +1,6 @@
 {
-  "description": "Hey, I'm web developer and apasionate of ecosystem JavaScript"
+  "introduction": {
+    "line1": "Hey, my name is Pablo, I'm frontend in Valencia",
+    "line2": "and a apasionate about the world of code."
+  }
 }
