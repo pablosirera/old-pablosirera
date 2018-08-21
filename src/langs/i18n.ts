@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import en from './locales/en.json'
+import { ILangModel } from '@/models/LangModel'
 
 Vue.use(VueI18n)
 const locale: string = 'en'
@@ -12,3 +13,14 @@ export const i18n = new VueI18n({
   locale,
   messages
 })
+
+export const LANGUAGES: ILangModel[] = [
+  {
+    text: 'ES',
+    key: 'es'
+  },
+  {
+    text: 'EN',
+    key: 'en'
+  }
+]

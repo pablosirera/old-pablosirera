@@ -1,18 +1,18 @@
 <template>
   <section id="app">
-    <AppHeader/>
+    <HeaderContainer/>
     <router-view/>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import AppHeader from '@/containers/HeaderContainer.vue'
+import HeaderContainer from '@/containers/HeaderContainer.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
-    AppHeader
+    HeaderContainer
   }
 })
 </script>
