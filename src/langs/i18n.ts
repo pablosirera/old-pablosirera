@@ -12,3 +12,14 @@ export const i18n = new VueI18n({
   locale,
   messages
 })
+
+export const LANGUAGES = [
+  {
+    text: 'ES',
+    key: 'es'
+  },
+  {
+    text: 'EN',
+    key: 'en'
+  }
+]

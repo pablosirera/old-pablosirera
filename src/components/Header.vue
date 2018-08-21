@@ -1,44 +1,57 @@
 <template>
-  <section id="nav">
+  <header id="nav">
     <div class="languages">
-      <span 
-        :class="{ 'selected': defaultLanguage === 'es' }" 
-        @click="changeLanguage('es')">
-        ES
-      </span>
       <span
-        :class="{ 'selected': defaultLanguage === 'en' }" 
-        @click="changeLanguage('en')">
-        EN
+        v-for="(lang, index) in arrayLanguages"
+        :key="index"
+        :class="{'selected': defaultLanguage === lang.key }"
+        @click="changeLanguage(lang.key)">
+        {{ lang.text }}
       </span>
     </div>
-    <header>
+    <section
+      v-if="isOnHomeView"
+      class="description-wrapper">
       <p class="description">{{ $t('introduction.line1') }}</p>
       <p class="description">{{ $t('introduction.line2') }}</p>
-    </header>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/blog">Blog</router-link> |
-    <router-link to="/about">About</router-link>
-  </section>
+    </section>
+    <router-link
+      class="link"
+      to="/">Home</router-link> |
+    <router-link
+      class="link"
+      to="/projects">Projects</router-link> |
+    <router-link
+      class="link"
+      to="/blog">Blog</router-link> |
+    <router-link
+      class="link"
+      to="/about">About</router-link>
+  </header>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import { LANGUAGES } from '@/langs/i18n'
+
 export default Vue.extend({
   name: 'AppHeader',
   props: {
     language: {
       type: String,
       default: null
+    },
+    isOnHomeView: {
+      type: Boolean
     }
   },
-  data: () => ({
-    defaultLanguage: 'en'
-  }),
-  watch: {
-    language() {
-      this.defaultLanguage = this.language
+  computed: {
+    arrayLanguages() {
+      if (LANGUAGES) return LANGUAGES
+      return []
+    },
+    defaultLanguage(): string {
+      return this.language
     }
   },
   methods: {
@@ -68,7 +81,7 @@ export default Vue.extend({
     box-shadow: #fff 0 0 0 5px;
     border-radius: 3px;
   }
-  header {
+  .description-wrapper {
     width: 430px;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -91,9 +104,11 @@ export default Vue.extend({
   }
   a {
     font-weight: bold;
+    font-size: 16px;
     color: #2c3e50;
+    text-decoration: unset;
     &.router-link-exact-active {
-      color: #42b983;
+      color: #1f8ed5;
     }
   }
   .languages {
