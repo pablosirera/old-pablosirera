@@ -12,11 +12,8 @@ import VTooltip from 'v-tooltip'
 import '@/assets/styles/all.scss'
 
 router.beforeEach((to, from, next) => {
-  if (to.name === 'home') {
-    store.commit(`global/${globalMutationsTypes.GLOBAL.SET.IS_ON_HOME}`, { isOnHome: true })
-  } else {
-    store.commit(`global/${globalMutationsTypes.GLOBAL.SET.IS_ON_HOME}`, { isOnHome: false })
-  }
+  const isHome = to.name === 'home'
+  store.commit(`global/${globalMutationsTypes.GLOBAL.SET.IS_ON_HOME}`, { isOnHome: isHome })
   next()
 })
 
