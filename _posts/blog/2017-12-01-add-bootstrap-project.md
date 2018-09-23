@@ -13,7 +13,7 @@ author: pablosirera
 ---
 
 <div class="image-logo">
-  <img class="image" src="{{site.url}}/{{site.images.bootstrap}}">
+  <img class="image" alt="Bootstrap" src="{{site.url}}/{{site.images.bootstrap}}">
 </div>
 
 Para añadir bootstrap 4 a tu proyecto, necesitaremos instalar el paquete con **npm**.
