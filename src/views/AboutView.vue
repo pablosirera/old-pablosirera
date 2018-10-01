@@ -2,8 +2,15 @@
   <PageLayout>
     <section class="about">
       <div class="about-description">
-        <p>I'm Pablo Sirera, web developer based on Valencia. I'm interested in everything related to the web and I like to learn new things constantly and try them.</p>
-        <p>For more information about me, I'm created a <a href="#">Learning Tracker</a> to visit my experience and the knowledge I have of technologies.</p>
+        <p>{{ $t('about.description1') }}</p>
+        <p>
+          {{ $t('about.description2_1') }}
+          <a
+            class="link"
+            target="_blank"
+            href="https://github.com/pablosirera/My-Learning-Tracker">Learning Tracker</a>
+          {{ $t('about.description2_2') }}
+        </p>
       </div>
       <Timeline
         :message-when-no-items="messageWhenNoItems"
@@ -24,39 +31,42 @@ export default Vue.extend({
     PageLayout,
     Timeline
   },
-  data: () => ({
-    messageWhenNoItems: 'No hay datos.',
-    timelineItems: [
-      {
-        year: {
-          from: '2017',
-          to: 'Currently'
+  computed: {
+    messageWhenNoItems(): string {
+      return (this as any).$t('about.timeline.emptyData')
+    },
+    timelineItems() {
+      const self = this as any
+      return [
+        {
+          year: {
+            from: '2017',
+            to: `${self.$t('about.timeline.currently')}`
+          },
+          items: [
+            {
+              nameMonth: `${self.$t('about.timeline.march')}`,
+              title: 'Sopra Steria',
+              description: `${self.$t('about.timeline.descSopra')}`
+            }
+          ]
         },
-        items: [
-          {
-            nameMonth: 'March',
-            title: 'Sopra Steria',
-            description:
-              '<b>Desarrollador frontend</b> desarrollando aplicaciones tanto para web como para móvil. Usando Angular, VueJS, HTML, CSS, SASS, Ionic.'
-          }
-        ]
-      },
-      {
-        year: {
-          from: '2015',
-          to: '2017'
-        },
-        items: [
-          {
-            nameMonth: 'Juny',
-            title: 'Eco Bon Profit',
-            description:
-              '<b>Gestor e-commerce</b> de un comercio electrónico para una mediana empresa en la industria cárnica.'
-          }
-        ]
-      }
-    ]
-  })
+        {
+          year: {
+            from: '2015',
+            to: '2017'
+          },
+          items: [
+            {
+              nameMonth: `${self.$t('about.timeline.juny')}`,
+              title: 'Eco Bon Profit',
+              description: `${self.$t('about.timeline.descBonProfit')}`
+            }
+          ]
+        }
+      ]
+    }
+  }
 })
 </script>
 
@@ -65,6 +75,14 @@ export default Vue.extend({
   text-align: justify;
   width: 60%;
   margin: 0 auto;
+  .link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    &:hover {
+      color: black;
+    }
+  }
   .about-timeline {
     margin-top: 30px;
   }
