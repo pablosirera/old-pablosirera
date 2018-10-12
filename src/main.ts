@@ -10,6 +10,7 @@ import 'vuetify/dist/vuetify.min.css'
 import VTooltip from 'v-tooltip'
 
 import '@/assets/styles/all.scss'
+import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 
 router.beforeEach((to, from, next) => {
   const isHome = to.name === 'home'

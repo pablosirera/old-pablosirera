@@ -12,3 +12,8 @@ declare module 'v-tooltip' {
   const value: any
   export default value
 }
+
+declare module 'timeline-vuejs' {
+  const value: any
+  export default value
+}
