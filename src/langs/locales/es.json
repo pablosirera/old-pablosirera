@@ -1,19 +1,19 @@
 {
   "introduction": {
     "line1": "Hola, mi nombre es Pablo, soy frontend en Valencia",
-    "line2": "y un apasionado del mundo de la programación."
+    "line2": "y soy un apasionado del ecosistema de JavaScript."
   },
   "about": {
-    "description1": "Soy Pablo Sirera, desarrollador web situado en Valencia. Estoy interesado en todo lo relacionado con el desarrollo web y móvil, me gusta estar en constante aprendizaje para después poder ponerlas en práctica.",
-    "description2_1": "Para más información acerca de mi, he creado un ",
-    "description2_2": " para visitar mi experiencia y mis conocimientos tecnológicos.",
+    "description1": "Soy Pablo Sirera, desarrollador web viviendo en Valencia. Me interesa todo aquello relacionado con el desarrollo web y móvil. Me gusta estar siempre en constante aprendizaje y poner en práctica los conocimientos adquiridos.",
+    "description2_1": "He creado este ",
+    "description2_2": " con información acerca de mi experiencia y mis conocimientos tecnológicos.",
     "timeline": {
       "emptyData": "No hay datos.",
       "currently": "Actualmente",
       "march": "Marzo",
       "juny": "Junio",
-      "descSopra": "<b>Desarrollador frontend</b> desarrollando aplicaciones tanto para web como para móvil. Usando Angular, VueJS, HTML, CSS, SASS, Ionic.",
-      "descBonProfit": "<b>Gestor e-commerce</b> de un comercio electrónico para una mediana empresa en la industria cárnica."
+      "descSopra": "<b>Desarrollador frontend</b> tanto de aplicaciones para web como para móvil con VueJS, Angular, HTML, CSS, SASS, Ionic.",
+      "descBonProfit": "<b>Gestor e-commerce</b> en una empresa de la industria cárnica."
     }
   }
 }

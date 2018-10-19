@@ -91,14 +91,14 @@ export default Vue.extend({
       white-space: nowrap;
       margin: 0 auto;
       letter-spacing: 0.15em;
-      animation: typing 3.5s steps(40, end);
+      animation: typing 2.5s steps(40, end);
     }
     .description:nth-child(2) {
       white-space: nowrap;
       overflow: hidden;
       opacity: 0;
-      animation: typing2 3.5s steps(40, end);
-      animation-delay: 3.5s;
+      animation: typing2 2.5s steps(40, end);
+      animation-delay: 2.5s;
       animation-fill-mode: forwards;
     }
   }
