@@ -16,11 +16,13 @@ export const i18n = new VueI18n({
 
 export const LANGUAGES: ILangModel[] = [
   {
-    text: 'ES',
-    key: 'es'
+    key: 'es',
+    alt: 'Spanish',
+    text: 'ES'
   },
   {
-    text: 'EN',
-    key: 'en'
+    key: 'en',
+    alt: 'English',
+    text: 'EN'
   }
 ]

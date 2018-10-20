@@ -1,12 +1,16 @@
 <template>
-  <header id="nav">
+  <header class="nav">
     <div class="languages">
       <span
         v-for="(lang, index) in arrayLanguages"
         :key="index"
-        :class="{'selected': defaultLanguage === lang.key }"
+        :class="getLanguageClass(lang.key)"
         @click="changeLanguage(lang.key)">
-        {{ lang.text }}
+        <img
+          v-if="hasIcon(lang.key)"
+          :src="getIconUrl(lang.key)"
+          :alt="lang.alt">
+        <span v-else>{{ lang.text }}</span>
       </span>
     </div>
     <section
@@ -57,13 +61,29 @@ export default Vue.extend({
   methods: {
     changeLanguage(languageSelected: string) {
       this.$emit('on-change-language', languageSelected)
+    },
+    getIconUrl(name: string): string {
+      try {
+        return require(`@/assets/icons/langs/${name}.png`)
+      } catch {
+        return ''
+      }
+    },
+    getLanguageClass(key: string): { [key: string]: boolean } {
+      return {
+        language: true,
+        selected: this.defaultLanguage === key
+      }
+    },
+    hasIcon(key: string): boolean {
+      return !!this.getIconUrl(key)
     }
   }
 })
 </script>
 
 <style lang="scss" scoped>
-#nav {
+.nav {
   padding: 30px;
   border-bottom: 1px solid #ededed;
   position: relative;
@@ -115,11 +135,20 @@ export default Vue.extend({
     position: absolute;
     right: 0;
     top: 0;
-    span {
+    .language {
       cursor: pointer;
       margin-right: 10px;
+      img {
+        width: 20px;
+        opacity: 0.3;
+      }
       &.selected {
-        font-weight: bolder;
+        span {
+          font-weight: bolder;
+        }
+        img {
+          opacity: 1;
+        }
       }
       &:hover {
         font-weight: bolder;
