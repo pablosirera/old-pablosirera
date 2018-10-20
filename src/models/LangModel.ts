@@ -1,4 +1,5 @@
 export interface ILangModel {
-  text: string
+  text?: string
   key: string
+  alt?: string
 }
