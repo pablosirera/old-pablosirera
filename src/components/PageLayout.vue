@@ -1,9 +1,7 @@
 <template>
-  <v-content>
-    <v-container fluid>
-      <slot/>
-    </v-container>
-  </v-content>
+  <section class="container">
+    <slot/>
+  </section>
 </template>
 
 <script lang="ts">
@@ -12,3 +10,10 @@ export default Vue.extend({
   name: 'PageLayout'
 })
 </script>
+
+<style lang="scss" scoped>
+.container {
+  margin: auto;
+  padding: 16px;
+}
+</style>
