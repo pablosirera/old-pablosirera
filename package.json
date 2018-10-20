@@ -17,7 +17,6 @@
     "vue-i18n": "^7.6.0",
     "vue-property-decorator": "^6.0.0",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.0.19",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -44,7 +43,7 @@
     "not ie <= 8"
   ],
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged && npm run lint"
   },
   "lint-staged": {
     "*.js": [
