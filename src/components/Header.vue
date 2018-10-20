@@ -65,7 +65,7 @@ export default Vue.extend({
     getIconUrl(name: string): string {
       try {
         return require(`@/assets/icons/langs/${name}.png`)
-      } catch (error) {
+      } catch {
         return ''
       }
     },
