@@ -14,7 +14,7 @@
       </span>
     </div>
     <section
-      v-if="isOnHomeView"
+      v-if="isHomeView"
       class="description-wrapper">
       <p class="description">{{ $t('introduction.line1') }}</p>
       <p class="description">{{ $t('introduction.line2') }}</p>
@@ -37,6 +37,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { LANGUAGES } from '@/langs/i18n'
+import { ROUTES } from '@/constants'
 
 export default Vue.extend({
   name: 'AppHeader',
@@ -44,9 +45,6 @@ export default Vue.extend({
     language: {
       type: String,
       default: null
-    },
-    isOnHomeView: {
-      type: Boolean
     }
   },
   computed: {
@@ -56,6 +54,9 @@ export default Vue.extend({
     },
     defaultLanguage(): string {
       return this.language
+    },
+    isHomeView(): boolean {
+      return this.$route.path === ROUTES.HOME
     }
   },
   methods: {
@@ -65,7 +66,7 @@ export default Vue.extend({
     getIconUrl(name: string): string {
       try {
         return require(`@/assets/icons/langs/${name}.png`)
-      } catch {
+      } catch (error) {
         return ''
       }
     },
