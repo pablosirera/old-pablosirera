@@ -1,17 +1,14 @@
 <template>
   <header class="nav">
-    <div class="languages">
-      <span
-        v-for="(lang, index) in arrayLanguages"
-        :key="index"
-        :class="getLanguageClass(lang.key)"
-        @click="changeLanguage(lang.key)">
-        <img
-          v-if="hasIcon(lang.key)"
-          :src="getIconUrl(lang.key)"
-          :alt="lang.alt">
-        <span v-else>{{ lang.text }}</span>
-      </span>
+    <Languages
+      :language="language"
+      @change-language="changeLanguage"/>
+    <div class="wrapper-image">
+      <img
+        v-if="isHomeView"
+        :alt="$t('home.principalImage')"
+        class="principal-image"
+        src="@/assets/home-image.png">
     </div>
     <section
       v-if="isHomeView"
@@ -36,11 +33,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { LANGUAGES } from '@/langs/i18n'
 import { ROUTES } from '@/constants'
+import Languages from '@/components/Languages.vue'
 
 export default Vue.extend({
   name: 'AppHeader',
+  components: { Languages },
   props: {
     language: {
       type: String,
@@ -48,13 +46,6 @@ export default Vue.extend({
     }
   },
   computed: {
-    arrayLanguages() {
-      if (LANGUAGES) return LANGUAGES
-      return []
-    },
-    defaultLanguage(): string {
-      return this.language
-    },
     isHomeView(): boolean {
       return this.$route.path === ROUTES.HOME
     }
@@ -62,22 +53,6 @@ export default Vue.extend({
   methods: {
     changeLanguage(languageSelected: string) {
       this.$emit('on-change-language', languageSelected)
-    },
-    getIconUrl(name: string): string {
-      try {
-        return require(`@/assets/icons/langs/${name}.png`)
-      } catch (error) {
-        return ''
-      }
-    },
-    getLanguageClass(key: string): { [key: string]: boolean } {
-      return {
-        language: true,
-        selected: this.defaultLanguage === key
-      }
-    },
-    hasIcon(key: string): boolean {
-      return !!this.getIconUrl(key)
     }
   }
 })
@@ -102,10 +77,21 @@ export default Vue.extend({
     box-shadow: #fff 0 0 0 5px;
     border-radius: 3px;
   }
+  .wrapper-image {
+    width: 540px;
+    height: 305px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: auto;
+    .principal-image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
   .description-wrapper {
     width: 430px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     .description {
       overflow: hidden;
@@ -130,30 +116,6 @@ export default Vue.extend({
     text-decoration: unset;
     &.router-link-exact-active {
       color: #1f8ed5;
-    }
-  }
-  .languages {
-    position: absolute;
-    right: 0;
-    top: 0;
-    .language {
-      cursor: pointer;
-      margin-right: 10px;
-      img {
-        width: 20px;
-        opacity: 0.3;
-      }
-      &.selected {
-        span {
-          font-weight: bolder;
-        }
-        img {
-          opacity: 1;
-        }
-      }
-      &:hover {
-        font-weight: bolder;
-      }
     }
   }
 }

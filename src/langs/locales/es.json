@@ -15,5 +15,8 @@
       "descSopra": "<b>Desarrollador frontend</b> tanto de aplicaciones para web como para móvil con VueJS, Angular, HTML, CSS, SASS, Ionic.",
       "descBonProfit": "<b>Gestor e-commerce</b> en una empresa de la industria cárnica."
     }
+  },
+  "home": {
+    "principalImage": "Imagen principal"
   }
 }

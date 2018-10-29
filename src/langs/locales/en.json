@@ -15,5 +15,8 @@
       "descSopra": "<b>Frontend developer</b> for web and mobile applications. Using VueJS, Angular, HTML, CSS, SASS, Ionic.",
       "descBonProfit": "<b>Admin of an e-commerce</b> for a company in the meat industry."
     }
+  },
+  "home": {
+    "principalImage": "Principal image"
   }
 }
