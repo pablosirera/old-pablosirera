@@ -1,0 +1,22 @@
+{
+  "introduction": {
+    "line1": "Hey, my name is Pablo, I'm frontend in Valencia",
+    "line2": "and I am passionate about ecosystem of JavaScript."
+  },
+  "about": {
+    "description1": "I'm Pablo Sirera, web developer based in Valencia. I'm interested in everything related to the web and mobile programming. I like to be learning new things constantly and try them after that.",
+    "description2_1": "I created this ",
+    "description2_2": " to know more information about me and my technological knowledge.",
+    "timeline": {
+      "emptyData": "Empty data.",
+      "currently": "Currently",
+      "march": "March",
+      "juny": "Juny",
+      "descSopra": "<b>Frontend developer</b> for web and mobile applications. Using VueJS, Angular, HTML, CSS, SASS, Ionic.",
+      "descBonProfit": "<b>Admin of an e-commerce</b> for a company in the meat industry."
+    }
+  },
+  "home": {
+    "principalImage": "Principal image"
+  }
+}
