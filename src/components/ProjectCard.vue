@@ -62,7 +62,10 @@ export default Vue.extend({
   }
   .description {
     background-color: #f9f9f9;
-    padding: 15px;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .title {
       font-weight: 900;
       font-size: 18px;
