@@ -13,7 +13,9 @@
           v-for="(link, index) in projectData.links"
           :key="index"
           class="link">
-          <a :href="link.url">
+          <a
+            :href="link.url"
+            target="_blank">
             <img
               :src="getUrlImage(`icons/${link.icon}.png`)"
               :alt="link.icon">

@@ -22,42 +22,42 @@ export default Vue.extend({
     PageLayout,
     ProjectCard
   },
-  data: (): {
-    projects: ProjectCardModel[]
-  } => ({
-    projects: [
-      {
-        image: 'images/timeline-vuejs.png',
-        name: 'Timeline VueJS',
-        description: 'lorem ipsum aoishduha uwehfewih foehwiofewoh fewocoiwe hiowh ef',
-        links: [
-          {
-            url: 'https://github.com/pablosirera/timeline-vuejs',
-            icon: 'github'
-          },
-          {
-            url: 'https://github.com/pablosirera/timeline-vuejs',
-            icon: 'web'
-          }
-        ]
-      },
-      {
-        image: 'images/my-learning-tracker.png',
-        name: 'My Learning Tracker',
-        description: 'lorem ipsum aoishduha uwehfewih foehwiofewoh fewocoiwe hiowh ef',
-        links: [
-          {
-            url: 'https://github.com/pablosirera/timeline-vuejs',
-            icon: 'github'
-          },
-          {
-            url: 'https://github.com/pablosirera/timeline-vuejs',
-            icon: 'web'
-          }
-        ]
-      }
-    ]
-  })
+  computed: {
+    projects(): ProjectCardModel[] {
+      return [
+        {
+          image: 'images/timeline-vuejs.png',
+          name: 'Timeline VueJS',
+          description: this.$t('projects.timeline') as string,
+          links: [
+            {
+              url: 'https://github.com/pablosirera/timeline-vuejs',
+              icon: 'github'
+            },
+            {
+              url: 'https://github.com/pablosirera/timeline-vuejs',
+              icon: 'web'
+            }
+          ]
+        },
+        {
+          image: 'images/my-learning-tracker.png',
+          name: 'My Learning Tracker',
+          description: this.$t('projects.learningTracker') as string,
+          links: [
+            {
+              url: 'https://github.com/pablosirera/timeline-vuejs',
+              icon: 'github'
+            },
+            {
+              url: 'https://github.com/pablosirera/timeline-vuejs',
+              icon: 'web'
+            }
+          ]
+        }
+      ]
+    }
+  }
 })
 </script>
 
