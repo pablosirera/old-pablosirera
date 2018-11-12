@@ -18,5 +18,9 @@
   },
   "home": {
     "principalImage": "Principal image"
+  },
+  "projects": {
+    "timeline": "Minimalist Timeline with VueJS.",
+    "learningTracker": "Learning tracker about my knowledge."
   }
 }
