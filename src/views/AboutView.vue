@@ -87,4 +87,16 @@ export default Vue.extend({
     margin-top: 30px;
   }
 }
+@media (max-width: 576px) {
+  .about {
+    width: 90%;
+    .about-timeline {
+      /deep/ .wrapper-item {
+        .section-year {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
 </style>

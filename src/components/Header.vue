@@ -140,4 +140,21 @@ export default Vue.extend({
     width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .nav {
+    padding-left: 0;
+    padding-right: 0;
+    .wrapper-image {
+      width: 340px;
+      height: 200px;
+    }
+    .description-wrapper {
+      width: 340px;
+      .description {
+        letter-spacing: unset;
+      }
+    }
+  }
+}
 </style>
