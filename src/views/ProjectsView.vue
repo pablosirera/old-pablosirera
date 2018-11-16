@@ -73,4 +73,14 @@ export default Vue.extend({
     }
   }
 }
+
+@media (max-width: 576px) {
+  .projects > .project {
+    margin-left: 0;
+    margin-top: 25px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
 </style>
