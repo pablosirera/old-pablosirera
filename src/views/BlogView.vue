@@ -1,17 +1,21 @@
 <template>
   <PageLayout>
-    <h1>This is an blog page</h1>
+    <section class="blog">
+      <PostsList/>
+    </section>
   </PageLayout>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import PageLayout from '@/components/PageLayout.vue'
+import PostsList from '@/components/PostsList.vue'
 
 export default Vue.extend({
   name: 'BlogView',
   components: {
-    PageLayout
+    PageLayout,
+    PostsList
   }
 })
 </script>

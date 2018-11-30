@@ -17,3 +17,8 @@ declare module 'timeline-vuejs' {
   const value: any
   export default value
 }
+
+declare module 'vue-markdown' {
+  const value: any
+  export default value
+}
