@@ -8,17 +8,6 @@ declare module '*.json' {
   export default value
 }
 
-declare module 'v-tooltip' {
-  const value: any
-  export default value
-}
-
-declare module 'timeline-vuejs' {
-  const value: any
-  export default value
-}
-
-declare module 'vue-markdown' {
-  const value: any
-  export default value
-}
+declare module 'v-tooltip'
+declare module 'timeline-vuejs'
+declare module 'highlight.js'

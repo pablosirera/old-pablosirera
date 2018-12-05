@@ -19,7 +19,7 @@
     </section>
     <router-link
       class="link"
-      to="/">Home</router-link> |
+      to="/home">Home</router-link> |
     <router-link
       class="link"
       to="/projects">Projects</router-link> |
@@ -115,7 +115,7 @@ export default Vue.extend({
     font-size: 16px;
     color: #2c3e50;
     text-decoration: unset;
-    &.router-link-exact-active {
+    &.router-link-active {
       color: #1f8ed5;
     }
   }

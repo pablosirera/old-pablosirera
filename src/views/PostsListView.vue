@@ -1,9 +1,10 @@
 <template>
   <div class="posts-list">
-    <div 
+    <div
       v-for="(post, index) in posts" 
-      :key="index" 
-      class="post">
+      :key="index"
+      class="post"
+      @click="selectPost(post.id)">
       <h2 class="title">{{ post.title }}</h2>
       <span class="date">{{ post.date }}</span>
     </div>
@@ -11,23 +12,23 @@
       <h2 class="title">Title</h2>
       <span class="date">Enero, 2018</span>
     </div>
-    <!-- <vue-markdown>**hola**</vue-markdown> -->
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import { LISTPOSTS } from '@/constants'
-// import VueMarkdown from 'vue-markdown'
 
 export default Vue.extend({
   name: 'PostsList',
-  components: {
-    // VueMarkdown
-  },
   computed: {
     posts() {
       return LISTPOSTS
+    }
+  },
+  methods: {
+    selectPost(idPost: number) {
+      this.$router.push({ name: 'BlogView', params: { id: idPost.toString() } })
     }
   }
 })

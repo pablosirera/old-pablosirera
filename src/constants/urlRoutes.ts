@@ -1,6 +1,9 @@
 export const ROUTES = {
-  HOME: '/',
+  HOME: '/home',
   PROJECTS: '/projects',
-  BLOG: '/blog',
+  BLOG: {
+    BASE_URL: '/blog',
+    ID: () => `${ROUTES.BLOG.BASE_URL}/:id`
+  },
   ABOUT: '/about'
 }
