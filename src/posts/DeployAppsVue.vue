@@ -1,6 +1,5 @@
 <template>
   <article class="article-blog">
-    <!-- podría añadir una foto con el icono de vue -->
     <h2>Deploy Aplicación VueJS en GitHub Pages</h2>
     <div class="body-article">
       <p>Para poder desplegar nuestra aplicación en Vue para que nos muestre dentro de GitHub Pages habrá que seguir los siguientes pasos:</p>
