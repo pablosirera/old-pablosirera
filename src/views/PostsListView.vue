@@ -1,16 +1,12 @@
 <template>
   <div class="posts-list">
     <div
-      v-for="(post, index) in posts" 
+      v-for="(post, index) in posts"
       :key="index"
       class="post"
       @click="selectPost(post.id)">
       <h2 class="title">{{ post.title }}</h2>
       <span class="date">{{ post.date }}</span>
-    </div>
-    <div class="post">
-      <h2 class="title">Title</h2>
-      <span class="date">Enero, 2018</span>
     </div>
   </div>
 </template>

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "EditorConfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "octref.vetur",
+    "dbaeumer.vscode-eslint"
+  ]
+}
