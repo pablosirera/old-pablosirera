@@ -2,16 +2,17 @@
   <article class="article-blog">
     <h2>Deploy Aplicación VueJS en GitHub Pages</h2>
     <div class="body-article">
-      <p>Para poder desplegar nuestra aplicación en Vue para que nos muestre dentro de GitHub Pages habrá que seguir los siguientes pasos:</p>
-      <p>Primero deberemos hacer checkout de master a otra rama que será para trabajar sobre ella en vez de sobre master. Por ejemplo:</p>
+      <p>Si se quiere desplegar la aplicación hecha con Vue para que nos muestre el contenido dentro de GitHub Pages habrá que seguir los siguientes pasos.</p>
+      <p>• Inicialmente y <b>muy importante</b> habrá que cambiarse a otra rama diferente de master que se usará para trabajar sobre ella en vez de sobre la rama principal.</p>
       <pre v-highlightjs>
         <code class="bash">  git checkout -b ghpages</code>
       </pre>
+      <p>Esto es debido a que cuando a continuación se haga el deploy de la aplicación la carpeta /dist se hará push sobre master y no se encontrará el contenido de la aplicación solamente el de la carpeta /dist</p>
       <p>
-        A continuación, en la raíz del proyecto tendremos que crear
+        • Ahora, en la raíz del proyecto habrá que crear el archivo
         <code
           class="simple-code"
-        >deploy.sh</code> con la siguiente configuración:
+        >deploy.sh</code> con el siguiente contenido:
       </p>
       <pre v-highlightjs>
         <code class="shell">
@@ -39,10 +40,12 @@
     cd -
         </code>
       </pre>
-      <p>Esto nos creará el build de nuestra aplicación y lo subirá a master, de ahí la importancia de crear una rama con nuestro código.</p>
+      <p>Cabe destacar que la tarea de build en la de por defecto:
+      <code class="simple-code">"build": "vue-cli-service build"</code></p>
+      <p>El script creará el build de la aplicación y lo subirá a master.</p>
       <p>
-        Para finalizar, lanzaremos el script en la consola
-        <code class="simple-code">sh deploy.sh</code>. Una vez que termine si nos vamos a nuestra dominio veremos nuestra aplicación desplegada.
+        • Para finalizar, escribimos en la consola
+        <code class="simple-code">sh deploy.sh</code> para lanzar el script que se ha creado anteriormente. Una vez que termine si nos vamos a nuestra url de GitHub Pages veremos la aplicación desplegada.
       </p>
     </div>
   </article>
