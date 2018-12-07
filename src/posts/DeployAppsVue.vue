@@ -40,7 +40,8 @@
         </code>
       </pre>
       <p>Esto nos creará el build de nuestra aplicación y lo subirá a master, de ahí la importancia de crear una rama con nuestro código.</p>
-      <p>Para finalizar, lanzaremos el script en la consola
+      <p>
+        Para finalizar, lanzaremos el script en la consola
         <code class="simple-code">sh deploy.sh</code>. Una vez que termine si nos vamos a nuestra dominio veremos nuestra aplicación desplegada.
       </p>
     </div>
@@ -54,17 +55,3 @@ export default Vue.extend({
   name: 'DeployAppsVue'
 })
 </script>
-
-<style lang="scss">
-.article-blog {
-  h2 {
-    margin-bottom: 40px;
-  }
-  .body-article {
-    text-align: left;
-    p {
-      line-height: 1.7;
-    }
-  }
-}
-</style>
