@@ -39,30 +39,14 @@ export default Vue.extend({
       const self = this as any
       return [
         {
-          year: {
-            from: '2017',
-            to: `${self.$t('about.timeline.currently')}`
-          },
-          items: [
-            {
-              nameMonth: `${self.$t('about.timeline.march')}`,
-              title: 'Sopra Steria',
-              description: `${self.$t('about.timeline.descSopra')}`
-            }
-          ]
+          from: new Date(2017, 2),
+          title: 'Sopra Steria',
+          description: `${self.$t('about.timeline.descSopra')}`
         },
         {
-          year: {
-            from: '2015',
-            to: '2017'
-          },
-          items: [
-            {
-              nameMonth: `${self.$t('about.timeline.juny')}`,
-              title: 'Eco Bon Profit',
-              description: `${self.$t('about.timeline.descBonProfit')}`
-            }
-          ]
+          from: new Date(2015, 5),
+          title: 'Eco Bon Profit',
+          description: `${self.$t('about.timeline.descBonProfit')}`
         }
       ]
     }
