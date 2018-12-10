@@ -15,6 +15,7 @@
       <Timeline
         :message-when-no-items="messageWhenNoItems"
         :timeline-items="timelineItems"
+        :date-locale="getLocaleLanguage"
         class="about-timeline"/>
     </section>
   </PageLayout>
@@ -22,6 +23,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapGetters } from 'vuex'
 import PageLayout from '@/components/PageLayout.vue'
 import Timeline from 'timeline-vuejs'
 
@@ -32,6 +34,7 @@ export default Vue.extend({
     Timeline
   },
   computed: {
+    ...mapGetters('langs', ['getLocaleLanguage']),
     messageWhenNoItems(): string {
       return (this as any).$t('about.timeline.emptyData')
     },
