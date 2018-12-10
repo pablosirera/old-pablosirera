@@ -15,6 +15,7 @@
       <Timeline
         :message-when-no-items="messageWhenNoItems"
         :timeline-items="timelineItems"
+        :date-locale="getLocaleLanguage"
         class="about-timeline"/>
     </section>
   </PageLayout>
@@ -22,6 +23,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapGetters } from 'vuex'
 import PageLayout from '@/components/PageLayout.vue'
 import Timeline from 'timeline-vuejs'
 
@@ -32,6 +34,7 @@ export default Vue.extend({
     Timeline
   },
   computed: {
+    ...mapGetters('langs', ['getLocaleLanguage']),
     messageWhenNoItems(): string {
       return (this as any).$t('about.timeline.emptyData')
     },
@@ -39,30 +42,14 @@ export default Vue.extend({
       const self = this as any
       return [
         {
-          year: {
-            from: '2017',
-            to: `${self.$t('about.timeline.currently')}`
-          },
-          items: [
-            {
-              nameMonth: `${self.$t('about.timeline.march')}`,
-              title: 'Sopra Steria',
-              description: `${self.$t('about.timeline.descSopra')}`
-            }
-          ]
+          from: new Date(2017, 2),
+          title: 'Sopra Steria',
+          description: `${self.$t('about.timeline.descSopra')}`
         },
         {
-          year: {
-            from: '2015',
-            to: '2017'
-          },
-          items: [
-            {
-              nameMonth: `${self.$t('about.timeline.juny')}`,
-              title: 'Eco Bon Profit',
-              description: `${self.$t('about.timeline.descBonProfit')}`
-            }
-          ]
+          from: new Date(2015, 5),
+          title: 'Eco Bon Profit',
+          description: `${self.$t('about.timeline.descBonProfit')}`
         }
       ]
     }
