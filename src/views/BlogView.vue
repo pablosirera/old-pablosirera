@@ -33,4 +33,11 @@ export default Vue.extend({
     margin-bottom: 40px;
   }
 }
+@media (max-width: 576px) {
+  .blog {
+    article {
+      width: 90%;
+    }
+  }
+}
 </style>

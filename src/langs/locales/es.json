@@ -22,5 +22,19 @@
   "projects": {
     "timeline": "Timeline minimalista con VueJS.",
     "learningTracker": "Learning tracker sobre mis conocimientos."
+  },
+  "posts": {
+    "deployAppsVue": {
+      "title": "Deploy Aplicación con VueJS en GithubPages",
+      "p1": "Para desplegar una aplicación hecha con Vue que muestre el contenido dentro de GitHub Pages habrá que seguir los siguientes pasos.",
+      "p2": "• Inicialmente y <b>muy importante</b> habrá que cambiarse a otra rama diferente de master que se usará para trabajar sobre ella en vez de sobre la rama principal.",
+      "p3": "Esto es debido a que cuando a continuación se haga el deploy de la aplicación, la carpeta /dist se subirá a master y no estará el contenido de la aplicación solamente el de la carpeta /dist.",
+      "p4-1": "• Ahora, en la raíz del proyecto habrá que crear el archivo",
+      "p4-2": " con el siguiente contenido:",
+      "p5": "La tarea de build es la de por defecto:",
+      "p6": "El script creará el build de la aplicación y lo subirá a master.",
+      "p7-1": "• Para finalizar, en la consola hay que lanzar el comando ",
+      "p7-2": " para ejecutar el script que se ha creado anteriormente. Una vez que termine ya estará disponible en la url de GitHub Pages la aplicación desplegada."
+    }
   }
 }

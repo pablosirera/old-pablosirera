@@ -58,4 +58,17 @@ export default Vue.extend({
     }
   }
 }
+@media (max-width: 576px) {
+  .posts-list {
+    width: 90%;
+    .post {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
 </style>
