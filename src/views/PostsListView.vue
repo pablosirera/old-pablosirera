@@ -48,7 +48,7 @@ export default Vue.extend({
     selectPost(idPost: number) {
       this.$router.push({ name: 'BlogView', params: { id: idPost.toString() } })
     },
-    getDate(post) {
+    getDate(post: any) {
       const date = post.date
       const year = date.getFullYear()
       const month = this.monthNames[date.getMonth()]

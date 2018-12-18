@@ -1,5 +1,7 @@
+import { TranslateResult } from 'vue-i18n'
+
 export interface IPostsModel {
-  title: string
+  title: TranslateResult
   date: Date
   id: number
 }
