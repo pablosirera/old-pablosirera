@@ -3,10 +3,6 @@
   margin: 0;
 }
 html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-sizing: border-box;
   font-size: 14px;
   text-rendering: optimizeLegibility;
 }
@@ -18,4 +14,14 @@ b {
 }
 p {
   line-height: 1.5;
+}
+pre > code {
+  border-radius: 5px;
+}
+
+code.simple-code {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 4px 6px;
 }

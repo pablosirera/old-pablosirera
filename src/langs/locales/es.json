@@ -3,6 +3,20 @@
     "line1": "Hola, mi nombre es Pablo, soy frontend en Valencia",
     "line2": "y soy un apasionado del ecosistema de JavaScript."
   },
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
+  },
   "about": {
     "description1": "Soy Pablo Sirera, desarrollador web viviendo en Valencia. Me interesa todo aquello relacionado con el desarrollo web y móvil. Me gusta estar siempre en constante aprendizaje y poner en práctica los conocimientos adquiridos.",
     "description2_1": "He creado este ",
@@ -22,5 +36,19 @@
   "projects": {
     "timeline": "Timeline minimalista con VueJS.",
     "learningTracker": "Learning tracker sobre mis conocimientos."
+  },
+  "posts": {
+    "deployAppsVue": {
+      "title": "Como desplegar una aplicación hecha con Vue en GithubPages",
+      "p1": "Para desplegar una aplicación hecha con Vue que muestre el contenido dentro de GitHub Pages, hay que seguir los siguientes pasos.",
+      "p2": "• Inicialmente, y <b>muy importante</b>, hay que cambiarse a otra rama diferente de master, que se usará para trabajar sobre ella en vez de sobre la rama principal.",
+      "p3": "El motivo de esto, es que al hacer a continuación el deploy de la aplicación, la carpeta /dist se subirá a master y no estará el contenido de la aplicación, sino el de la carpeta /dist.",
+      "p4-1": "• En el siguiente paso, habrá que crear el archivo ",
+      "p4-2": " en la raíz del proyecto con el siguiente contenido:",
+      "p5": "La tarea de build es la establecida por defecto:",
+      "p6": "El script creará el build de la aplicación y lo subirá a master.",
+      "p7-1": "• Para finalizar, en la consola hay que lanzar el comando ",
+      "p7-2": " para ejecutar el script que se ha creado anteriormente. Una vez que termine, ya estará disponible en la url de GitHub Pages la aplicación desplegada."
+    }
   }
 }
