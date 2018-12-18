@@ -22,7 +22,7 @@ export default Vue.extend({
       return [
         {
           title: this.$t('posts.deployAppsVue.title'),
-          date: new Date(2018, 0),
+          date: new Date(2018, 11),
           id: 0
         }
       ]
