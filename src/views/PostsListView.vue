@@ -6,25 +6,53 @@
       class="post"
       @click="selectPost(post.id)">
       <h2 class="title">{{ post.title }}</h2>
-      <span class="date">{{ post.date }}</span>
+      <span class="date">{{ getDate(post) }}</span>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { LISTPOSTS } from '@/constants'
+import { IPostsModel } from '@/models'
 
 export default Vue.extend({
   name: 'PostsList',
   computed: {
-    posts() {
-      return LISTPOSTS
+    posts(): IPostsModel[] {
+      return [
+        {
+          title: this.$t('posts.deployAppsVue.title'),
+          date: new Date(2018, 0),
+          id: 0
+        }
+      ]
+    },
+    monthNames() {
+      return [
+        (this as any).$t('months.january'),
+        (this as any).$t('months.february'),
+        (this as any).$t('months.march'),
+        (this as any).$t('months.april'),
+        (this as any).$t('months.may'),
+        (this as any).$t('months.june'),
+        (this as any).$t('months.july'),
+        (this as any).$t('months.august'),
+        (this as any).$t('months.september'),
+        (this as any).$t('months.october'),
+        (this as any).$t('months.november'),
+        (this as any).$t('months.december')
+      ]
     }
   },
   methods: {
     selectPost(idPost: number) {
       this.$router.push({ name: 'BlogView', params: { id: idPost.toString() } })
+    },
+    getDate(post) {
+      const date = post.date
+      const year = date.getFullYear()
+      const month = this.monthNames[date.getMonth()]
+      return `${month}, ${year}`
     }
   }
 })

@@ -3,6 +3,20 @@
     "line1": "Hey, my name is Pablo, I'm frontend in Valencia",
     "line2": "and I am passionate about ecosystem of JavaScript."
   },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
   "about": {
     "description1": "I'm Pablo Sirera, web developer based in Valencia. I'm interested in everything related to the web and mobile programming. I like to be learning new things constantly and try them after that.",
     "description2_1": "I created this ",
@@ -25,16 +39,16 @@
   },
   "posts": {
     "deployAppsVue": {
-      "title": "Deploy Application with VueJS into GithubPages",
-      "p1": "Para desplegar una aplicación hecha con Vue que muestre el contenido dentro de GitHub Pages habrá que seguir los siguientes pasos.",
-      "p2": "• Inicialmente y <b>muy importante</b> habrá que cambiarse a otra rama diferente de master que se usará para trabajar sobre ella en vez de sobre la rama principal.",
-      "p3": "Esto es debido a que cuando a continuación se haga el deploy de la aplicación, la carpeta /dist se subirá a master y no estará el contenido de la aplicación solamente el de la carpeta /dist.",
-      "p4-1": "• Ahora, en la raíz del proyecto habrá que crear el archivo",
-      "p4-2": " con el siguiente contenido:",
-      "p5": "La tarea de build es la de por defecto:",
-      "p6": "El script creará el build de la aplicación y lo subirá a master.",
-      "p7-1": "• Para finalizar, en la consola hay que lanzar el comando ",
-      "p7-2": " para ejecutar el script que se ha creado anteriormente. Una vez que termine ya estará disponible en la url de GitHub Pages la aplicación desplegada."
+      "title": "How to deploy application with Vue into GithubPages",
+      "p1": "To deploy an application made with Vue that displays the content within GitHub Pages, the following steps must be followed.",
+      "p2": "• Initially and <b>very important</b>, it’s necessary to change to a different branch from master that will be used to work on it instead of on the main branch.",
+      "p3": "The reason of this is that the folder /dist will be uploaded to master when the application is deployed. The code that will be uploaded here is the /dist folder content.",
+      "p4-1": "• The next step, is create a ",
+      "p4-2": " file with the following content",
+      "p5": "The build task is: ",
+      "p6": "The script will create the application build and upload it to master.",
+      "p7-1": "• Finally, you have to run ",
+      "p7-2": " to execute the script that was previously created. Once it is finished, the deployed application will be available in the GitHub Pages url."
     }
   }
 }
