@@ -5,13 +5,18 @@ import AboutView from '@/views/AboutView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import BlogView from '@/views/BlogView.vue'
 import PostsListView from '@/views/PostsListView.vue'
+import NotFoundComponent from '@/components/NotFoundComponent.vue'
 import { ROUTES } from './constants'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFoundComponent
+    },
     {
       path: '/',
       redirect: ROUTES.HOME

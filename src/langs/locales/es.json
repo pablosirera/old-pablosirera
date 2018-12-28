@@ -3,6 +3,10 @@
     "line1": "Hola, mi nombre es Pablo, soy frontend en Valencia",
     "line2": "y soy un apasionado del ecosistema de JavaScript."
   },
+  "notFound": {
+    "errorText": "No encontramos esta página.",
+    "button": "Ir a la página principal"
+  },
   "months": {
     "january": "Enero",
     "february": "Febrero",

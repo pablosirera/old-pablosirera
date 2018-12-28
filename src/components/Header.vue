@@ -1,34 +1,36 @@
 <template>
-  <header class="nav">
+  <header :class="navClasses">
     <Languages
       :language="language"
       @change-language="changeLanguage"/>
-    <div
-      v-if="isHomeView"
-      class="wrapper-image">
-      <img
-        :alt="$t('home.principalImage')"
-        class="principal-image"
-        src="@/assets/home-image.png">
-    </div>
-    <section
-      v-if="isHomeView"
-      class="description-wrapper">
-      <p class="description">{{ $t('introduction.line1') }}</p>
-      <p class="description">{{ $t('introduction.line2') }}</p>
+    <section v-if="!isNotFound">
+      <div
+        v-if="isHomeView"
+        class="wrapper-image">
+        <img
+          :alt="$t('home.principalImage')"
+          class="principal-image"
+          src="@/assets/home-image.png">
+      </div>
+      <section
+        v-if="isHomeView"
+        class="description-wrapper">
+        <p class="description">{{ $t('introduction.line1') }}</p>
+        <p class="description">{{ $t('introduction.line2') }}</p>
+      </section>
+      <router-link
+        class="link"
+        to="/home">Home</router-link> |
+      <router-link
+        class="link"
+        to="/projects">Projects</router-link> |
+      <router-link
+        class="link"
+        to="/blog">Blog</router-link> |
+      <router-link
+        class="link"
+        to="/about">About</router-link>
     </section>
-    <router-link
-      class="link"
-      to="/home">Home</router-link> |
-    <router-link
-      class="link"
-      to="/projects">Projects</router-link> |
-    <router-link
-      class="link"
-      to="/blog">Blog</router-link> |
-    <router-link
-      class="link"
-      to="/about">About</router-link>
   </header>
 </template>
 
@@ -49,6 +51,15 @@ export default Vue.extend({
   computed: {
     isHomeView(): boolean {
       return this.$route.path === ROUTES.HOME
+    },
+    isNotFound(): boolean {
+      return this.$route.name === 'NotFound'
+    },
+    navClasses(): { [key: string]: boolean } {
+      return {
+        nav: true,
+        'nav-without-line': this.isNotFound
+      }
     }
   },
   methods: {
@@ -77,6 +88,13 @@ export default Vue.extend({
     background: #fff;
     box-shadow: #fff 0 0 0 5px;
     border-radius: 3px;
+  }
+  &.nav-without-line {
+    padding: 0;
+    border: 0;
+    &::before {
+      content: none;
+    }
   }
   .wrapper-image {
     width: 540px;
