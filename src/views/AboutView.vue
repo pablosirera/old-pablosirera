@@ -70,8 +70,11 @@ export default Vue.extend({
       color: black;
     }
   }
-  .about-timeline {
+  /deep/ .about-timeline.timeline {
     margin-top: 30px;
+    .wrapper-item {
+      grid-template-columns: 60px 1fr;
+    }
   }
 }
 @media (max-width: 576px) {
