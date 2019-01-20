@@ -23,8 +23,11 @@
   },
   "about": {
     "description1": "Soy Pablo Sirera, desarrollador web viviendo en Valencia. Me interesa todo aquello relacionado con el desarrollo web y móvil. Me gusta estar siempre en constante aprendizaje y poner en práctica los conocimientos adquiridos.",
-    "description2_1": "He creado este ",
-    "description2_2": " con información acerca de mi experiencia y mis conocimientos tecnológicos.",
+    "description2_1": "En mi cuenta personal de ",
+    "description2_2": " he creado un repositorio con un ",
+    "description2_3": " con información acerca de mi experiencia y mis conocimientos tecnológicos.",
+    "description3_1": "También puedes seguirme en mi cuenta de ",
+    "description3_2": " y en mi cuenta de ",
     "timeline": {
       "emptyData": "No hay datos.",
       "currently": "Actualmente",

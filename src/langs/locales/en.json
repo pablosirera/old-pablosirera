@@ -23,8 +23,11 @@
   },
   "about": {
     "description1": "I'm Pablo Sirera, web developer based in Valencia. I'm interested in everything related to the web and mobile programming. I like to be learning new things constantly and try them after that.",
-    "description2_1": "I created this ",
-    "description2_2": " to know more information about me and my technological knowledge.",
+    "description2_1": "In my personal account of ",
+    "description2_2": " I created a repository with this ",
+    "description2_3": " to know more information about me and my technological knowledge.",
+    "description3_1": "You can also follow me on ",
+    "description3_2": " and ",
     "timeline": {
       "emptyData": "Empty data.",
       "currently": "Currently",

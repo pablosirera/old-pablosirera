@@ -8,8 +8,25 @@
           <a
             class="link"
             target="_blank"
-            href="https://github.com/pablosirera/My-Learning-Tracker">Learning Tracker</a>
+            href="https://github.com/pablosirera">GitHub</a>
           {{ $t('about.description2_2') }}
+          <a
+            class="link"
+            target="_blank"
+            href="https://github.com/pablosirera/My-Learning-Tracker">Learning Tracker</a>
+          {{ $t('about.description2_3') }}
+        </p>
+        <p>
+          {{ $t('about.description3_1') }}
+          <a
+            class="link"
+            target="_blank"
+            href="https://www.instagram.com/pablodeveloper">Instagram</a>
+          {{ $t('about.description3_2') }}
+          <a
+            class="link"
+            target="_blank"
+            href="https://twitter.com/pablosirera">Twitter</a>
         </p>
       </div>
       <Timeline
@@ -64,10 +81,10 @@ export default Vue.extend({
   margin: 0 auto;
   .link {
     text-decoration: none;
-    color: #2c3e50;
+    color: #09f;
     font-weight: 500;
     &:hover {
-      color: black;
+      text-decoration: underline;
     }
   }
   /deep/ .about-timeline.timeline {
