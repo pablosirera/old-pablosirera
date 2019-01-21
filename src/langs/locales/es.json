@@ -47,8 +47,8 @@
   "posts": {
     "deployAppsVue": {
       "title": "Como desplegar una aplicación hecha con Vue en GithubPages",
-      "p1": "Para desplegar una aplicación hecha con Vue que muestre el contenido dentro de GitHub Pages, hay que seguir los siguientes pasos.",
-      "p2": "• Inicialmente, y <b>muy importante</b>, hay que cambiarse a otra rama diferente de master, que se usará para trabajar sobre ella en vez de sobre la rama principal.",
+      "p1": "¿Quieres desplegar tu aplicación con Vue en internet y no sabes cómo? Sigue entonces los siguientes pasos para desplegar tu app en GitHub Pages:",
+      "p2": "• Primero de todo, cámbiate a otra rama diferente de master, esta la usaremos para trabajar sobre ella en vez de sobre la rama principal.",
       "p3": "El motivo de esto, es que al hacer a continuación el deploy de la aplicación, la carpeta /dist se subirá a master y no estará el contenido de la aplicación, sino el de la carpeta /dist.",
       "p4-1": "• En el siguiente paso, habrá que crear el archivo ",
       "p4-2": " en la raíz del proyecto con el siguiente contenido:",

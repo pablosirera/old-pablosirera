@@ -46,12 +46,12 @@
   },
   "posts": {
     "deployAppsVue": {
-      "title": "How to deploy application with Vue into GithubPages",
-      "p1": "To deploy an application made with Vue that displays the content within GitHub Pages, the following steps must be followed.",
-      "p2": "• Initially and <b>very important</b>, it’s necessary to change to a different branch from master that will be used to work on it instead of on the main branch.",
+      "title": "How to deploy your Vue App into GithubPages",
+      "p1": "Do you want to deploy your Vue App into the internet and don't know how? You can follow the next steps in order to deploy it into GitHub Pages:",
+      "p2": "• First of all, it’s necessary to change to a different branch from master that will be used to work on it.",
       "p3": "The reason of this is that the folder /dist will be uploaded to master when the application is deployed. The code that will be uploaded here is the /dist folder content.",
       "p4-1": "• The next step, is create a ",
-      "p4-2": " file with the following content",
+      "p4-2": " file with the following content:",
       "p5": "The build task is: ",
       "p6": "The script will create the application build and upload it to master.",
       "p7-1": "• Finally, you have to run ",

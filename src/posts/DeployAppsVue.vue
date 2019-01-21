@@ -5,14 +5,14 @@
       <p>{{ $t('posts.deployAppsVue.p1') }}</p>
       <p v-html="$t('posts.deployAppsVue.p2')"/>
       <pre v-highlightjs>
-        <code class="bash">  git checkout -b develop</code>
+        <code class="bash">  git checkout -b github-pages</code>
       </pre>
       <p>{{ $t('posts.deployAppsVue.p3') }}</p>
       <p>
         {{ $t('posts.deployAppsVue.p4-1') }}
         <code
           class="simple-code"
-        >deploy.sh</code>{{ $t('posts.deployAppsVue.p4-2') }}
+        >github-pages.sh</code>{{ $t('posts.deployAppsVue.p4-2') }}
       </p>
       <pre v-highlightjs>
         <code class="shell">
@@ -45,7 +45,7 @@
       <p>{{ $t('posts.deployAppsVue.p6') }}</p>
       <p>
         {{ $t('posts.deployAppsVue.p7-1') }}
-        <code class="simple-code">sh deploy.sh</code>{{ $t('posts.deployAppsVue.p7-2') }}
+        <code class="simple-code">sh github-pages.sh</code>{{ $t('posts.deployAppsVue.p7-2') }}
       </p>
     </div>
   </article>
