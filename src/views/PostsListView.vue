@@ -71,13 +71,13 @@ export default Vue.extend({
     &:last-child {
       border-bottom: 0;
     }
+    .title {
+      font-size: 14px;
+    }
     &:hover {
       .title {
         opacity: 0.7;
       }
-    }
-    .title {
-      font-size: 14px;
     }
     .date {
       display: flex;
