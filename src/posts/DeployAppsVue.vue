@@ -7,7 +7,7 @@
       <pre v-highlightjs>
         <code class="bash">  git checkout -b github-pages</code>
       </pre>
-      <p>{{ $t('posts.deployAppsVue.p3') }}</p>
+      <p v-html="$t('posts.deployAppsVue.p3')"/>
       <p>
         {{ $t('posts.deployAppsVue.p4-1') }}
         <code
