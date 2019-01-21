@@ -5,8 +5,9 @@
   }
   .body-article {
     font-size: 16px;
-    text-align: left;
+    text-align: justify;
     p {
+      padding: 0 10px;
       line-height: 1.7;
     }
     .inline-code {

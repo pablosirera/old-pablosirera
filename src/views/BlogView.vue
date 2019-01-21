@@ -36,7 +36,7 @@ export default Vue.extend({
 @media (max-width: 768px) {
   .blog {
     article {
-      width: 90%;
+      width: 100%;
     }
   }
 }
