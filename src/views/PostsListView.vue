@@ -72,7 +72,7 @@ export default Vue.extend({
       border-bottom: 0;
     }
     .title {
-      font-size: 14px;
+      font-size: 16px;
     }
     &:hover {
       .title {
