@@ -25,10 +25,10 @@
   "devDependencies": {
     "@types/jest": "^22.0.1",
     "@vue/cli": "3.0.0",
-    "@vue/cli-plugin-babel": "3.0.0",
+    "@vue/cli-plugin-babel": "^3.5.1",
     "@vue/cli-plugin-eslint": "3.0.0",
     "@vue/cli-plugin-typescript": "3.0.0",
-    "@vue/cli-plugin-unit-jest": "3.0.0",
+    "@vue/cli-plugin-unit-jest": "^3.5.1",
     "@vue/cli-service": "3.0.0",
     "@vue/eslint-config-prettier": "3.0.0",
     "@vue/eslint-config-typescript": "3.0.0",
@@ -40,7 +40,7 @@
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0",
-    "ts-jest": "^22.0.1",
+    "ts-jest": "^24.0.0",
     "vue-template-compiler": "^2.5.13"
   },
   "browserslist": [
