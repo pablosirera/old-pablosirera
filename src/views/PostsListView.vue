@@ -14,18 +14,13 @@
 <script lang="ts">
 import Vue from 'vue'
 import { IPostsModel } from '@/models'
+import { POSTS } from '@/constants/posts'
 
 export default Vue.extend({
   name: 'PostsList',
   computed: {
     posts(): IPostsModel[] {
-      return [
-        {
-          title: this.$t('posts.deployAppsVue.title'),
-          date: new Date(2018, 11),
-          id: 0
-        }
-      ]
+      return POSTS
     },
     monthNames() {
       return [
@@ -66,7 +61,7 @@ export default Vue.extend({
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #8080803b;
     cursor: pointer;
     &:last-child {
       border-bottom: 0;
