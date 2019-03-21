@@ -1,4 +1,4 @@
 export class State {
-  language: string = 'en'
-  loadedLanguages: string[] = ['en']
+  language: string = 'es'
+  loadedLanguages: string[] = ['es']
 }
