@@ -8,7 +8,7 @@ export const POSTS: IPostsModel[] = [
     id: 0
   },
   {
-    title: 'Añadir i18n en una aplicación Vue',
+    title: i18n.t('posts.addI18nVue.title'),
     date: new Date(2019, 2),
     id: 1
   }

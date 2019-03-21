@@ -68,6 +68,7 @@ export default Vue.extend({
     }
     .title {
       font-size: 16px;
+      text-align: left;
     }
     &:hover {
       .title {
@@ -78,6 +79,7 @@ export default Vue.extend({
       display: flex;
       align-items: center;
       opacity: 0.6;
+      text-align: right;
     }
   }
 }
