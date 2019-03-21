@@ -93,6 +93,13 @@ export default Vue.extend({
       user-select: none;
       flex-direction: column;
       align-items: center;
+      .title {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .date {
+        text-align: center;
+      }
     }
   }
 }
