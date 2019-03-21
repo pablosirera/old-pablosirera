@@ -1,7 +1,8 @@
 <template>
   <PageLayout>
     <section class="blog">
-      <DeployAppsVue/>
+      <DeployAppsVue v-if="id === posts[0].id"/>
+      <Addi18nVue v-if="id === posts[1].id"/>
     </section>
   </PageLayout>
 </template>
@@ -10,16 +11,30 @@
 import Vue from 'vue'
 import PageLayout from '@/components/PageLayout.vue'
 import DeployAppsVue from '@/posts/DeployAppsVue.vue'
+import Addi18nVue from '@/posts/Addi18nVue.vue'
+import { POSTS, POSTS_IDS } from '@/constants/posts'
+import { ROUTES } from '@/constants/urlRoutes'
 
 export default Vue.extend({
   name: 'BlogView',
   components: {
     PageLayout,
-    DeployAppsVue
+    DeployAppsVue,
+    Addi18nVue
   },
   props: {
     id: {
       type: Number
+    }
+  },
+  computed: {
+    posts() {
+      return POSTS
+    }
+  },
+  mounted() {
+    if (!POSTS_IDS.includes(this.id)) {
+      this.$router.push({ name: 'PostListView' })
     }
   }
 })
