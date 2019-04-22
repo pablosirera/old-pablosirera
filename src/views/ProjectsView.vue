@@ -68,18 +68,17 @@ export default Vue.extend({
   justify-content: center;
   & .project {
     margin-left: 25px;
+
+    @media (max-width: 540px) {
+      margin-left: 0;
+      margin-top: 25px;
+    }
     &:first-child {
       margin-left: 0;
-    }
-  }
-}
 
-@media (max-width: 576px) {
-  .projects > .project {
-    margin-left: 0;
-    margin-top: 25px;
-    &:first-child {
-      margin-top: 0;
+      @media (max-width: 540px) {
+        margin-top: 0;
+      }
     }
   }
 }

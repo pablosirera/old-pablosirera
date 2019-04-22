@@ -15,9 +15,8 @@ export default Vue.extend({
 .container {
   margin: auto;
   padding: 16px;
-}
-@media (max-width: 576px) {
-  .container {
+
+  @media (max-width: 540px) {
     padding: 16px 0;
   }
 }

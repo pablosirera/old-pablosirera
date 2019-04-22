@@ -6,7 +6,6 @@ import { i18n } from './langs/i18n'
 import VTooltip from 'v-tooltip'
 import { highlightjsDirective } from '@/directives/highlightDirective'
 
-import '@/assets/styles/all.scss'
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 import 'highlight.js/styles/dracula.css'
 

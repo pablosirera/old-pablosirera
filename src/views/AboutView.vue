@@ -79,6 +79,11 @@ export default Vue.extend({
   text-align: justify;
   width: 60%;
   margin: 0 auto;
+
+  @media (max-width: 540px) {
+    width: 90%;
+  }
+
   .link {
     text-decoration: none;
     color: #09f;
@@ -91,18 +96,6 @@ export default Vue.extend({
     margin-top: 30px;
     .wrapper-item {
       grid-template-columns: 60px 1fr;
-    }
-  }
-}
-@media (max-width: 576px) {
-  .about {
-    width: 90%;
-    .about-timeline {
-      /deep/ .wrapper-item {
-        .section-year {
-          font-size: 18px;
-        }
-      }
     }
   }
 }

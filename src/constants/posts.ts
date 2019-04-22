@@ -5,12 +5,14 @@ export const POSTS: IPostsModel[] = [
   {
     title: i18n.t('posts.deployAppsVue.title', 'es'),
     date: new Date(2018, 11),
-    id: 0
+    id: 0,
+    altImage: i18n.t('posts.addI18nVue.title', 'es')
   },
   {
     title: i18n.t('posts.addI18nVue.title', 'es'),
     date: new Date(2019, 2),
-    id: 1
+    id: 1,
+    altImage: i18n.t('posts.addI18nVue.title', 'es')
   }
 ]
 

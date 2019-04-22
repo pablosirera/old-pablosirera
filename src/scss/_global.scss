@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+}
+body {
+  margin: 0;
+}
+b {
+  font-weight: bold;
+}
+p {
+  line-height: 1.5;
+}
+pre > code {
+  border-radius: 5px;
+}
+
+code.simple-code {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 6px;
+}
