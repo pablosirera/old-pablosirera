@@ -4,4 +4,5 @@ export interface IPostsModel {
   title: TranslateResult
   date: Date
   id: number
+  altImage: TranslateResult
 }

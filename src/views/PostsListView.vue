@@ -5,6 +5,10 @@
       :key="index"
       class="post"
       @click="selectPost(post.id)">
+      <img
+        :src="getUrlImage(post.id)"
+        :alt="post.altImage"
+        class="image">
       <h2 class="title">{{ post.title }}</h2>
       <span class="date">{{ getDate(post) }}</span>
     </div>
@@ -43,11 +47,15 @@ export default Vue.extend({
     selectPost(idPost: number) {
       this.$router.push({ name: 'BlogView', params: { id: idPost.toString() } })
     },
-    getDate(post: any) {
+    getDate(post: any): string {
       const date = post.date
       const year = date.getFullYear()
       const month = this.monthNames[date.getMonth()]
       return `${month}, ${year}`
+    },
+    getUrlImage(id: number) {
+      const parseId = id.toString()
+      return require(`@/assets/images/post${parseId}.jpg`)
     }
   }
 })
@@ -55,50 +63,51 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .posts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
   width: 60%;
   margin: auto;
+  padding-top: 30px;
   .post {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-bottom: 1px solid #8080803b;
+    flex-direction: column;
     cursor: pointer;
-    &:last-child {
-      border-bottom: 0;
-    }
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    padding: 10px;
     .title {
-      font-size: 16px;
+      font-size: 18px;
       text-align: left;
+      padding-top: 10px;
     }
     &:hover {
-      .title {
-        opacity: 0.7;
-      }
+      box-shadow: 4px 10px 20px #dadada80;
+      transform: translate3d(0, -3px, 0);
     }
     .date {
       display: flex;
-      align-items: center;
+      justify-content: flex-end;
       opacity: 0.6;
-      text-align: right;
+      padding-top: 5px;
+    }
+    .image {
+      width: 100%;
+      max-height: 250px;
     }
   }
 }
 @media (max-width: 576px) {
   .posts-list {
     width: 90%;
+    display: flex;
+    flex-direction: column;
     .post {
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
-      flex-direction: column;
-      align-items: center;
-      .title {
-        text-align: center;
-        margin-bottom: 5px;
-      }
-      .date {
-        text-align: center;
+      &:hover {
+        box-shadow: unset;
       }
     }
   }
