@@ -69,12 +69,25 @@ export default Vue.extend({
   width: 60%;
   margin: auto;
   padding-top: 30px;
+
+  @media (max-width: 540px) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
   .post {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     transition: box-shadow 0.5s ease, transform 0.5s ease;
     padding: 10px;
+
+    @media (max-width: 540px) {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
     .title {
       font-size: 18px;
       text-align: left;
@@ -83,6 +96,10 @@ export default Vue.extend({
     &:hover {
       box-shadow: 4px 10px 20px #dadada80;
       transform: translate3d(0, -3px, 0);
+
+      @media (max-width: 540px) {
+        box-shadow: unset;
+      }
     }
     .date {
       display: flex;
@@ -93,22 +110,6 @@ export default Vue.extend({
     .image {
       width: 100%;
       max-height: 250px;
-    }
-  }
-}
-@media (max-width: 576px) {
-  .posts-list {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    .post {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-      &:hover {
-        box-shadow: unset;
-      }
     }
   }
 }

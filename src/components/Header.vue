@@ -75,6 +75,10 @@ export default Vue.extend({
   padding: 30px;
   border-bottom: 1px solid #ededed;
   position: relative;
+  @media (max-width: 540px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   &::before {
     display: block;
     content: ' ';
@@ -102,6 +106,11 @@ export default Vue.extend({
     padding-top: 30px;
     padding-bottom: 20px;
     margin: auto;
+
+    @media (max-width: 540px) {
+      width: 340px;
+      height: 200px;
+    }
     .principal-image {
       max-width: 100%;
       max-height: 100%;
@@ -112,12 +121,20 @@ export default Vue.extend({
     margin: 0 auto;
     margin-bottom: 25px;
 
+    @media (max-width: 540px) {
+      width: 340px;
+    }
+
     .description {
       overflow: hidden;
       white-space: nowrap;
       margin: 0 auto;
       letter-spacing: 0.15em;
       animation: typing 2.5s steps(40, end);
+
+      @media (max-width: 540px) {
+        letter-spacing: unset;
+      }
     }
     .description:nth-child(2) {
       white-space: nowrap;
@@ -156,23 +173,6 @@ export default Vue.extend({
   to {
     opacity: 1;
     width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .nav {
-    padding-left: 0;
-    padding-right: 0;
-    .wrapper-image {
-      width: 340px;
-      height: 200px;
-    }
-    .description-wrapper {
-      width: 340px;
-      .description {
-        letter-spacing: unset;
-      }
-    }
   }
 }
 </style>

@@ -25,6 +25,10 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .not-found {
   margin-top: 200px;
+
+  @media (max-width: 540px) {
+    margin-top: 120px;
+  }
   .wrapper-error {
     display: flex;
     justify-content: center;
@@ -39,6 +43,11 @@ export default Vue.extend({
       text-align: right;
       font-weight: bold;
       padding-top: 30px;
+
+      @media (max-width: 540px) {
+        padding-top: 20px;
+        text-align: center;
+      }
     }
   }
   .button {
@@ -59,18 +68,6 @@ export default Vue.extend({
     }
     &:active {
       border-color: rgba(0, 0, 0, 0.54);
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .not-found {
-    margin-top: 120px;
-    .wrapper-error {
-      .error-text {
-        padding-top: 20px;
-        text-align: center;
-      }
     }
   }
 }

@@ -9,6 +9,10 @@
     p {
       padding: 0;
       line-height: 1.7;
+
+      @media (max-width: 540px) {
+        padding: 0 10px;
+      }
     }
     .secondary-title {
       margin-top: 20px;
@@ -37,16 +41,6 @@
       &:hover {
         opacity: 0.8;
         border-bottom: solid 1px #1f8ed5;
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .article-blog {
-    .body-article {
-      p {
-        padding: 0 10px;
       }
     }
   }
