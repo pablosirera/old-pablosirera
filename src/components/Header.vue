@@ -10,7 +10,7 @@
         <img
           :alt="$t('home.principalImage')"
           class="principal-image"
-          src="@/assets/home-image.png">
+          src="@/assets/images/home-image.png">
       </div>
       <section
         v-if="isHomeView"
