@@ -148,6 +148,7 @@ export default Vue.extend({
       width: 475px;
       margin: 0 auto;
       margin-bottom: 25px;
+      font-family: 'Indie Flower', 'Montserrat', Helvetica, Arial, sans-serif;
 
       @media (max-width: 540px) {
         width: 340px;
