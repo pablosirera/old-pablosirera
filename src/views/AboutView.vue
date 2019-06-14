@@ -88,12 +88,15 @@ export default Vue.extend({
     text-decoration: none;
     color: #09f;
     font-weight: 500;
+
     &:hover {
       text-decoration: underline;
     }
   }
+
   /deep/ .about-timeline.timeline {
     margin-top: 30px;
+
     .wrapper-item {
       grid-template-columns: 60px 1fr;
     }

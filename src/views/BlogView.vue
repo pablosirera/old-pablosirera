@@ -42,7 +42,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .blog {
-  article {
+  .article-blog {
     width: 75%;
     margin: 0 auto;
     margin-bottom: 40px;
