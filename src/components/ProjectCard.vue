@@ -50,33 +50,40 @@ export default Vue.extend({
 .project-card {
   border: 1px solid grey;
   max-width: 280px;
+
   .wrapper-image {
     border-bottom: 1px solid grey;
     max-height: 220px;
     overflow: hidden;
     padding: 7px;
     display: flex;
+
     img {
       width: 100%;
     }
   }
+
   .description {
     background-color: #f9f9f9;
     min-height: 145px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .title {
       font-weight: 900;
       font-size: 18px;
       padding-bottom: 10px;
     }
+
     .links {
       display: flex;
       justify-content: center;
       padding-top: 8px;
+
       .link {
         padding-left: 20px;
+
         &:first-child {
           padding-left: 0;
         }

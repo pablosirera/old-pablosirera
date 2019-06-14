@@ -64,21 +64,26 @@ export default Vue.extend({
   position: absolute;
   right: 0;
   top: 0;
+
   .language {
     cursor: pointer;
     margin-right: 10px;
+
     img {
       width: 20px;
       opacity: 0.3;
     }
+
     &.selected {
       span {
         font-weight: bolder;
       }
+
       img {
         opacity: 1;
       }
     }
+
     &:hover {
       font-weight: bolder;
     }

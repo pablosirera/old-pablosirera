@@ -29,14 +29,17 @@ export default Vue.extend({
   @media (max-width: 540px) {
     margin-top: 120px;
   }
+
   .wrapper-error {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     h1 {
       font-size: 105px;
     }
+
     .error-text {
       font-size: 50px;
       color: darkgray;
@@ -50,6 +53,7 @@ export default Vue.extend({
       }
     }
   }
+
   .button {
     padding: 10px;
     border-radius: 4px;
@@ -58,14 +62,17 @@ export default Vue.extend({
     font-size: 20px;
     margin-top: 30px;
     color: rgba(0, 0, 0, 0.54);
+
     &:hover {
       cursor: pointer;
       color: rgba(0, 0, 0, 0.68);
       border-color: rgba(0, 0, 0, 0.54);
     }
+
     &:focus {
       outline: 0;
     }
+
     &:active {
       border-color: rgba(0, 0, 0, 0.54);
     }

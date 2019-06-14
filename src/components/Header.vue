@@ -113,6 +113,7 @@ export default Vue.extend({
   &.nav-without-line {
     padding: 0;
     border: 0;
+
     &::before {
       content: none;
     }
@@ -163,6 +164,7 @@ export default Vue.extend({
           letter-spacing: unset;
         }
       }
+
       .description:nth-child(2) {
         white-space: nowrap;
         overflow: hidden;
@@ -179,6 +181,7 @@ export default Vue.extend({
     font-size: 16px;
     color: #2c3e50;
     text-decoration: unset;
+
     &.router-link-active {
       color: #1f8ed5;
     }
@@ -190,6 +193,7 @@ export default Vue.extend({
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -200,6 +204,7 @@ export default Vue.extend({
     opacity: 1;
     width: 0;
   }
+
   to {
     opacity: 1;
     width: 100%;

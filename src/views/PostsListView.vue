@@ -75,6 +75,7 @@ export default Vue.extend({
     display: flex;
     flex-direction: column;
   }
+
   .post {
     display: flex;
     flex-direction: column;
@@ -88,11 +89,13 @@ export default Vue.extend({
       -moz-user-select: none;
       user-select: none;
     }
+
     .title {
       font-size: 18px;
       text-align: left;
       padding-top: 10px;
     }
+
     &:hover {
       box-shadow: 4px 10px 20px #dadada80;
       transform: translate3d(0, -3px, 0);
@@ -101,12 +104,14 @@ export default Vue.extend({
         box-shadow: unset;
       }
     }
+
     .date {
       display: flex;
       justify-content: flex-end;
       opacity: 0.6;
       padding-top: 5px;
     }
+
     .image {
       width: 100%;
       max-height: 250px;

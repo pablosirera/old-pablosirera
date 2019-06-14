@@ -66,6 +66,7 @@ export default Vue.extend({
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   & .project {
     margin-left: 25px;
 
@@ -73,6 +74,7 @@ export default Vue.extend({
       margin-left: 0;
       margin-top: 25px;
     }
+
     &:first-child {
       margin-left: 0;
 
