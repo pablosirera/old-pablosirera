@@ -1,26 +1,4 @@
 {
-  "introduction": {
-    "line1": "Hey, my name is Pablo, I'm frontend in Valencia",
-    "line2": "and I am passionate about ecosystem of JavaScript."
-  },
-  "notFound": {
-    "errorText": "We couldn't find this page.",
-    "button": "Go to Home"
-  },
-  "months": {
-    "january": "January",
-    "february": "February",
-    "march": "March",
-    "april": "April",
-    "may": "May",
-    "june": "June",
-    "july": "July",
-    "august": "August",
-    "september": "September",
-    "october": "October",
-    "november": "November",
-    "december": "December"
-  },
   "about": {
     "description1": "I'm Pablo Sirera, web developer based in Valencia. I'm interested in everything related to the web and mobile programming. I like to be learning new things constantly and try them after that.",
     "description2_1": "In my personal account of ",
@@ -29,58 +7,53 @@
     "description3_1": "You can also follow me on ",
     "description3_2": " and ",
     "timeline": {
-      "emptyData": "Empty data.",
       "currently": "Currently",
-      "march": "March",
-      "juny": "Juny",
+      "descBonProfit": "<b>Admin of an e-commerce</b> for a company in the meat industry.",
       "descSopra": "<b>Frontend developer</b> for web and mobile applications. Using VueJS, Angular, HTML, CSS, SASS, Ionic.",
-      "descBonProfit": "<b>Admin of an e-commerce</b> for a company in the meat industry."
+      "emptyData": "Empty data.",
+      "juny": "Juny",
+      "march": "March"
     }
   },
   "home": {
     "principalImage": "Principal image"
   },
-  "projects": {
-    "timeline": "Minimalist Timeline with VueJS.",
-    "learningTracker": "Learning tracker about my knowledge."
+  "introduction": {
+    "line1": "Hey, my name is Pablo, I'm Front-End in Valencia",
+    "line2": "and I am passionate about ecosystem of JavaScript."
+  },
+  "months": {
+    "april": "April",
+    "august": "August",
+    "december": "December",
+    "february": "February",
+    "january": "January",
+    "july": "July",
+    "june": "June",
+    "march": "March",
+    "may": "May",
+    "november": "November",
+    "october": "October",
+    "september": "September"
+  },
+  "notFound": {
+    "button": "Go to Home",
+    "errorText": "We couldn't find this page."
   },
   "posts": {
-    "deployAppsVue": {
-      "title": "How to deploy your Vue App into GithubPages",
-      "p1": "Do you want to deploy your Vue App into the internet and don't know how? You can follow the next steps in order to deploy it into GitHub Pages:",
-      "p2": "• First of all, it’s necessary to change to a different branch from master that will be used to work on it.",
-      "p3": "The reason of this is that the folder <span class='code'>/dist</span> will be uploaded to master when the application is deployed. The code that will be uploaded here is the <span class='code'>/dist</span> folder content.",
-      "p4-1": "• The next step, is create a ",
-      "p4-2": " file with the following content:",
-      "p5": "The build task is: ",
-      "p6": "The script will create the application build and upload it to master.",
-      "p7-1": "• Finally, you have to run ",
-      "p7-2": " to execute the script that was previously created. Once it is finished, the deployed application will be available in the GitHub Pages url."
-    },
     "addI18nVue": {
-      "title": "Add i18n on Vue app",
       "p1": "¿Hoy en día quién no necesita acceder a una web y poder visitarla en su propio idioma? La respuesta es obvia y con el plugin <a target='_blank' href='https://kazupon.github.io/vue-i18n/'>vue-i18n</a> podemos configurar nuestra aplicación para que sea multilenguaje.",
-      "p2": "Para poder seguir estas instrucciones es necesario tener ya generado un proyecto con Vue.",
-      "title2": "Configurar vue-i18n",
-      "p3": "En primer lugar, hay que instalar el plugin vue-i18n para la internalización.",
-      "p4": "Una vez instalado, procedemos a configurar el plugin. En la carpeta <span class='code'>scr</span>, hay que crear un directorio llamado <span class='code'>plugins</span> y dentro de él crear un fichero <span class='code'>i18n.js</span>.",
-      "p5": "Dentro de este archivo, añadiremos la configuración del plugin para los idiomas que nosotros queramos. Pueden añadirse todos los idiomas que se desee, pero para este ejemplo solamente haremos Español e Inglés.",
-      "p6": "Para poder iniciar la configuración de los idiomas, primero hay que crear la estructura de mensajes. Inicializaremos un objeto de JavaScript, las <span class='code'>keys</span> del objeto deben ser el idioma que queramos añadir.",
-      "p7": "Para crearlo, añade el siguiente código al archivo <span class='code'>i18n.js</span>:",
-      "p8": "Con el código <span class='code'>Vue.use(VueI18n)</span>, le estamos comunicando a <span class='vue'>Vue</span> que use el plugin que hemos instalado.",
-      "p9": "A continuación, vamos a crear una instancia de <span class='code'>VueI18n</span> para poder usarlo. Después del código anterior añadimos lo siguiente:",
       "p10": "En este caso, estamos transmitiendo a la librería de <span class='code'>vue-i18n</span> que nos cree una instancia con el lenguaje que nosotros queremos, en este caso Español y en el caso de que falle sería el Inglés gracias a la propiedad <span class='code'>fallbackLocale</span>.",
       "p11": "Si quisieramos que VueI18n se instanciase con el idioma por defecto del navegador, sería suficiente modificando la propiedad <span class='code'>locale</span> por lo siguiente:",
       "p12": "Ahora necesitamos comunicar a <span class='vue'>Vue</span> que use la instancia de <span class='code'>VueI18n</span>. Para ello, iremos a main.js e importaremos nuestro objeto i18n:",
       "p13": "Una vez importado, lo añadiremos al objeto de <span class='vue'>Vue</span>:",
-      "title3": "Añadir texto para traducir",
       "p14": "Vamos a añadir contenido a nuestro objeto <span class='code'>messages</span>, concretamente aquellos textos que queramos usar posteriormente traducidos en la aplicación. Lo que deberá ir dentro del objeto del idioma será otro objeto clave-valor, donde la clave será el nombre por el cual accederemos a ese texto. Para ello, abrimos el fichero <span class='code'>i18n.js</span> y modificamos el objeto <span class='code'>messages</span>:",
       "p15": "* Es importante que tanto la clave del idioma como la del texto se llamen igual y que si se añade un texto se haga en ambos idiomas, para evitar que posteriormente nos de errores. *",
       "p16": "Ahora vamos a usar esas traducciones, para eso, nos vamos a cualquier componente ya creado (por ejemplo <span class='code'>App.vue</span>) y añadimos el siguiente código HTML:",
       "p17": "Para usar el plugin de internalización simplemente usaremos <span class='code'>$t</span> y entre paréntesis añadiremos como un string la key deseada.",
       "p18": "En el caso de tener más elementos dentro del objeto anterior, podremos modificarlo así:",
       "p19": "y en nuestro código HTML sería:",
-      "title4": "Cambiar de idioma",
+      "p2": "Para poder seguir estas instrucciones es necesario tener ya generado un proyecto con Vue.",
       "p20": "* Cabe destacar que la siguiente solución es una posibilidad que se propone pero existen muchas más que quizás se acoplen mejor a tu proyecto. *",
       "p21": "Para configurar el cambio de un idioma a otro debemos de tener implementada una lógica que cambie la propiedad <span class='code'>locale</span> de nuestra instancia de <span class='code'>i18n</span>, ya que es la propiedad que indica a la librería que idioma usar. Para esto, crearemos un componente de ejemplo que nos servirá para cambiar de un idioma a otro:",
       "p22": "Para mostrarlo es suficiente con añadirlo al componente <span class='code'>App.vue</span> en el sitio que queramos.",
@@ -90,7 +63,34 @@
       "p26": "Este cambio se debe a que en el data no tienes acceso a la propiedad <span class='code'>this</span>, en cambio en una computed si.",
       "p27": "Finalmente, si volvemos a lanzar el comando <span class='code'>npm run serve</span> podremos comprobar los cambios que hemos realizado anteriormente.",
       "p28": "He creado un repositorio con todos estos cambios realizados <a target='_blank' href='https://github.com/pablosirera/seed-vue-i18n'>Seed Vue i18n</a>",
-      "p29": "<b>P.D.:</b> Quizás has pensado...¿y si tengo muchos textos para traducir? El archivo <span class='code'>i18n.js</span> se puede hacer muy complicado de leer...esto es cierto y para evitarlo se pueden añadir todos los textos en ficheros específicos para cada idioma. De todo esto hablaré con más detenimiento en el próximo post."
+      "p29": "<b>P.D.:</b> Quizás has pensado...¿y si tengo muchos textos para traducir? El archivo <span class='code'>i18n.js</span> se puede hacer muy complicado de leer...esto es cierto y para evitarlo se pueden añadir todos los textos en ficheros específicos para cada idioma. De todo esto hablaré con más detenimiento en el próximo post.",
+      "p3": "En primer lugar, hay que instalar el plugin vue-i18n para la internalización.",
+      "p4": "Una vez instalado, procedemos a configurar el plugin. En la carpeta <span class='code'>scr</span>, hay que crear un directorio llamado <span class='code'>plugins</span> y dentro de él crear un fichero <span class='code'>i18n.js</span>.",
+      "p5": "Dentro de este archivo, añadiremos la configuración del plugin para los idiomas que nosotros queramos. Pueden añadirse todos los idiomas que se desee, pero para este ejemplo solamente haremos Español e Inglés.",
+      "p6": "Para poder iniciar la configuración de los idiomas, primero hay que crear la estructura de mensajes. Inicializaremos un objeto de JavaScript, las <span class='code'>keys</span> del objeto deben ser el idioma que queramos añadir.",
+      "p7": "Para crearlo, añade el siguiente código al archivo <span class='code'>i18n.js</span>:",
+      "p8": "Con el código <span class='code'>Vue.use(VueI18n)</span>, le estamos comunicando a <span class='vue'>Vue</span> que use el plugin que hemos instalado.",
+      "p9": "A continuación, vamos a crear una instancia de <span class='code'>VueI18n</span> para poder usarlo. Después del código anterior añadimos lo siguiente:",
+      "title": "Add i18n on Vue app",
+      "title2": "Configurar vue-i18n",
+      "title3": "Añadir texto para traducir",
+      "title4": "Cambiar de idioma"
+    },
+    "deployAppsVue": {
+      "p1": "Do you want to deploy your Vue App into the internet and don't know how? You can follow the next steps in order to deploy it into GitHub Pages:",
+      "p2": "• First of all, it’s necessary to change to a different branch from master that will be used to work on it.",
+      "p3": "The reason of this is that the folder <span class='code'>/dist</span> will be uploaded to master when the application is deployed. The code that will be uploaded here is the <span class='code'>/dist</span> folder content.",
+      "p4-1": "• The next step, is create a ",
+      "p4-2": " file with the following content:",
+      "p5": "The build task is: ",
+      "p6": "The script will create the application build and upload it to master.",
+      "p7-1": "• Finally, you have to run ",
+      "p7-2": " to execute the script that was previously created. Once it is finished, the deployed application will be available in the GitHub Pages url.",
+      "title": "How to deploy your Vue App into GithubPages"
     }
+  },
+  "projects": {
+    "learningTracker": "Learning tracker about my knowledge.",
+    "timeline": "Minimalist Timeline with VueJS."
   }
 }
