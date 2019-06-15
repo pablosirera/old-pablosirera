@@ -33,7 +33,7 @@
       <Icon name="github"/>
     </a>
     <a 
-      v-tooltip.bottom="'psirera4@gmail.com'"
+      v-tooltip.bottom="'personal@pablosirera.com'"
       :href="mailtoContent"
       class="link-icon">
       <Icon name="mail"/>
@@ -53,7 +53,7 @@ export default Vue.extend({
   data: (): {
     mailtoContent: string
   } => ({
-    mailtoContent: 'mailto:psirera4@gmail.com?subject=Email%20from%20your%20porfolio'
+    mailtoContent: 'mailto:personal@pablosirera.com?subject=Email%20from%20your%20porfolio'
   })
 })
 </script>
