@@ -3,6 +3,7 @@
     <a 
       v-tooltip.bottom="'twitter.com/pablosirera'"
       target="_blank"
+      rel="noopener noreferrer"
       class="link-icon"
       href="https://twitter.com/pablosirera">
       <Icon name="twitter"/>
@@ -10,6 +11,7 @@
     <a 
       v-tooltip.bottom="'instagram.com/pablodeveloper'"
       target="_blank"
+      rel="noopener noreferrer"
       class="link-icon"
       href="https://www.instagram.com/pablodeveloper">
       <Icon name="instagram"/>
@@ -17,6 +19,7 @@
     <a 
       v-tooltip.bottom="'linkedin.com/in/pablosireramata'"
       target="_blank"
+      rel="noopener noreferrer"
       class="link-icon"
       href="https://www.linkedin.com/in/pablosireramata">
       <Icon name="linkedin"/>
@@ -24,6 +27,7 @@
     <a 
       v-tooltip.bottom="'github.com/pablosirera'"
       target="_blank"
+      rel="noopener noreferrer"
       class="link-icon"
       href="https://github.com/pablosirera">
       <Icon name="github"/>

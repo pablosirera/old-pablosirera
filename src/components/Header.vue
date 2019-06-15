@@ -29,21 +29,7 @@
           <p class="description">{{ $t('introduction.line2') }}</p>
         </section>
       </div>
-      <!-- TODO: add this links into component -->
-      <div class="router-links">
-        <router-link 
-          class="link" 
-          to="/home">Home</router-link> |
-        <router-link 
-          class="link" 
-          to="/projects">Projects</router-link> |
-        <router-link 
-          class="link" 
-          to="/blog">Blog</router-link> |
-        <router-link 
-          class="link" 
-          to="/about">About</router-link>
-      </div>
+      <NavLinks/>
     </section>
   </header>
 </template>
@@ -51,11 +37,13 @@
 <script lang="ts">
 import Vue from 'vue'
 import { ROUTES } from '@/constants'
-import Languages from '@/components/Languages.vue'
 
 export default Vue.extend({
   name: 'AppHeader',
-  components: { Languages },
+  components: {
+    Languages: () => import('@/components/Languages.vue'),
+    NavLinks: () => import('@/components/NavLinks.vue')
+  },
   props: {
     language: {
       type: String,
@@ -174,17 +162,6 @@ export default Vue.extend({
         animation-delay: 2.5s;
         animation-fill-mode: forwards;
       }
-    }
-  }
-
-  a {
-    font-weight: bold;
-    font-size: 16px;
-    color: #2c3e50;
-    text-decoration: unset;
-
-    &.router-link-active {
-      color: #1f8ed5;
     }
   }
 }
