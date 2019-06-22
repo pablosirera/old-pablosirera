@@ -6,7 +6,9 @@
       rel="noopener noreferrer"
       class="link-icon"
       href="https://twitter.com/pablosirera">
-      <Icon name="twitter"/>
+      <Icon
+        name="twitter"
+        alt="pablosirera"/>
     </a>
     <a 
       v-tooltip.bottom="'instagram.com/pablodeveloper'"
@@ -14,7 +16,9 @@
       rel="noopener noreferrer"
       class="link-icon"
       href="https://www.instagram.com/pablodeveloper">
-      <Icon name="instagram"/>
+      <Icon
+        name="instagram"
+        alt="pablodeveloper"/>
     </a>
     <a 
       v-tooltip.bottom="'linkedin.com/in/pablosireramata'"
@@ -22,7 +26,9 @@
       rel="noopener noreferrer"
       class="link-icon"
       href="https://www.linkedin.com/in/pablosireramata">
-      <Icon name="linkedin"/>
+      <Icon
+        name="linkedin"
+        alt="pablosirera"/>
     </a>
     <a 
       v-tooltip.bottom="'github.com/pablosirera'"
@@ -30,13 +36,17 @@
       rel="noopener noreferrer"
       class="link-icon"
       href="https://github.com/pablosirera">
-      <Icon name="github"/>
+      <Icon
+        name="github"
+        alt="pablosirera"/>
     </a>
     <a 
-      v-tooltip.bottom="'personal@pablosirera.com'"
+      v-tooltip.bottom="'psirera4@gmail.com'"
       :href="mailtoContent"
       class="link-icon">
-      <Icon name="mail"/>
+      <Icon
+        name="mail"
+        alt="psirera4@gmail.com" />
     </a>
   </div>
 </template>
@@ -53,7 +63,7 @@ export default Vue.extend({
   data: (): {
     mailtoContent: string
   } => ({
-    mailtoContent: 'mailto:personal@pablosirera.com?subject=Email%20from%20your%20porfolio'
+    mailtoContent: 'mailto:psirera4@gmail.com?subject=Email%20from%20your%20porfolio'
   })
 })
 </script>

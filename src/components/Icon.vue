@@ -1,7 +1,8 @@
 <template>
   <img
-    :class="size" 
-    :src="getIconPath" 
+    :class="size"
+    :alt="alt"
+    :src="getIconPath"
     class="icon">
 </template>
 
@@ -17,6 +18,10 @@ export default Vue.extend({
     size: {
       type: String,
       default: 'small'
+    },
+    alt: {
+      type: String,
+      required: true
     }
   },
   computed: {
