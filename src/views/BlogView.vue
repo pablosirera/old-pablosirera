@@ -3,24 +3,23 @@
     <section class="blog">
       <DeployAppsVue v-if="id === posts[0].id"/>
       <Addi18nVue v-if="id === posts[1].id"/>
+      <EventBus v-if="id === posts[2].id"/>
     </section>
   </PageLayout>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import PageLayout from '@/components/PageLayout.vue'
-import DeployAppsVue from '@/posts/DeployAppsVue.vue'
-import Addi18nVue from '@/posts/Addi18nVue.vue'
 import { POSTS, POSTS_IDS } from '@/constants/posts'
 import { ROUTES } from '@/constants/urlRoutes'
 
 export default Vue.extend({
   name: 'BlogView',
   components: {
-    PageLayout,
-    DeployAppsVue,
-    Addi18nVue
+    PageLayout: () => import('@/components/PageLayout.vue'),
+    DeployAppsVue: () => import('@/posts/DeployAppsVue.vue'),
+    Addi18nVue: () => import('@/posts/Addi18nVue.vue'),
+    EventBus: () => import('@/posts/EventBus.vue')
   },
   props: {
     id: {

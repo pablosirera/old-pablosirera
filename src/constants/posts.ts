@@ -13,6 +13,12 @@ export const POSTS: IPostsModel[] = [
     date: new Date(2019, 2),
     id: 1,
     altImage: i18n.t('posts.addI18nVue.title', 'es')
+  },
+  {
+    title: i18n.t('posts.eventBus.title', 'es'),
+    date: new Date(2019, 5),
+    id: 2,
+    altImage: i18n.t('posts.eventBus.title', 'es')
   }
 ]
 
