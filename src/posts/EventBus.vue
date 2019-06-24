@@ -3,9 +3,8 @@
     <h2>{{ $t('posts.eventBus.title') }}</h2>
     <div class="body-article">
       <p v-html="$t('posts.eventBus.p1')"/>
-      <p>{{ $t('posts.eventBus.p2') }}</p>
       <h3 class="secondary-title">{{ $t('posts.eventBus.title2') }}</h3>
-      <p v-html="$t('posts.eventBus.p3')"/>
+      <p v-html="$t('posts.eventBus.p2')"/>
       <pre v-highlightjs>
         <code class="js">
     // event-bus.js
@@ -14,9 +13,9 @@
     export const EventBus = new Vue()
         </code>
       </pre>
-      <p v-html="$t('posts.eventBus.p4')"/>
+      <p v-html="$t('posts.eventBus.p3')"/>
       <h3 class="secondary-title">{{ $t('posts.eventBus.title3') }}</h3>
-      <p v-html="$t('posts.eventBus.p5')"/>
+      <p v-html="$t('posts.eventBus.p4')"/>
       <pre v-highlightjs>
         <code class="html">
     // TestButton.vue
@@ -39,9 +38,9 @@
     &lt;/script&gt;
         </code>
       </pre>
-      <p v-html="$t('posts.eventBus.p6')"/>
+      <p v-html="$t('posts.eventBus.p5')"/>
       <h3 class="secondary-title">{{ $t('posts.eventBus.title4') }}</h3>
-      <p v-html="$t('posts.eventBus.p7')"/>
+      <p v-html="$t('posts.eventBus.p6')"/>
       <pre v-highlightjs>
         <code class="js">
     // SomeList.vue
@@ -64,12 +63,12 @@
     }
         </code>
       </pre>
+      <p v-html="$t('posts.eventBus.p7')"/>
       <p v-html="$t('posts.eventBus.p8')"/>
-      <p v-html="$t('posts.eventBus.p9')"/>
       <h3 class="secondary-title">{{ $t('posts.eventBus.title5') }}</h3>
+      <p v-html="$t('posts.eventBus.p9')"/>
       <p v-html="$t('posts.eventBus.p10')"/>
       <p v-html="$t('posts.eventBus.p11')"/>
-      <p v-html="$t('posts.eventBus.p12')"/>
       <pre v-highlightjs>
         <code class="js">
     import { EventBus } from '@/utils/event-bus.js'
