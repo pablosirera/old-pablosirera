@@ -41,7 +41,7 @@ export default new Router({
       name: 'BlogView',
       component: BlogView,
       props: (route: Route) => ({
-        id: parseInt(route.params.id)
+        nameComponent: route.params.nameComponent
       })
     },
     {

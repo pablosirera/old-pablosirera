@@ -4,5 +4,6 @@ export interface IPostsModel {
   title: TranslateResult
   date: Date
   id: number
+  nameComponent: string
   altImage: TranslateResult
 }

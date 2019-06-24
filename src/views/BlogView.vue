@@ -1,17 +1,16 @@
 <template>
   <PageLayout>
     <section class="blog">
-      <DeployAppsVue v-if="id === posts[0].id"/>
-      <Addi18nVue v-if="id === posts[1].id"/>
-      <EventBus v-if="id === posts[2].id"/>
+      <component 
+        v-if="nameComponent" 
+        :is="nameComponent"/>
     </section>
   </PageLayout>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { POSTS, POSTS_IDS } from '@/constants/posts'
-import { ROUTES } from '@/constants/urlRoutes'
+import { POSTS_IDS } from '@/constants/posts'
 
 export default Vue.extend({
   name: 'BlogView',
@@ -22,17 +21,13 @@ export default Vue.extend({
     EventBus: () => import('@/posts/EventBus.vue')
   },
   props: {
-    id: {
-      type: Number
-    }
-  },
-  computed: {
-    posts() {
-      return POSTS
+    nameComponent: {
+      type: String,
+      required: true
     }
   },
   mounted() {
-    if (!POSTS_IDS.includes(this.id)) {
+    if (!POSTS_IDS.includes(this.nameComponent)) {
       this.$router.push({ name: 'PostListView' })
     }
   }

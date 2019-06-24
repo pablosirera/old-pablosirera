@@ -4,7 +4,7 @@
       v-for="(post, index) in posts"
       :key="index"
       class="post"
-      @click="selectPost(post.id)">
+      @click="selectPost(post.nameComponent)">
       <img
         :src="getUrlImage(post.id)"
         :alt="post.altImage"
@@ -44,8 +44,8 @@ export default Vue.extend({
     }
   },
   methods: {
-    selectPost(idPost: number) {
-      this.$router.push({ name: 'BlogView', params: { id: idPost.toString() } })
+    selectPost(nameComponent: string) {
+      this.$router.push({ name: 'BlogView', params: { nameComponent } })
     },
     getDate(post: any): string {
       const date = post.date
@@ -66,6 +66,7 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  max-width: 850px;
   width: 60%;
   margin: auto;
   padding-top: 30px;
