@@ -18,7 +18,6 @@ Vue.component('font-awsome-icon', FontAwesomeIcon)
 Vue.use(VTooltip)
 
 Vue.config.productionTip = false
-
 store.dispatch('langs/loadDefaultLanguage')
 
 new Vue({
