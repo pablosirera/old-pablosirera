@@ -6,4 +6,5 @@ export interface IPostsModel {
   id: number
   nameComponent: string
   altImage: TranslateResult
+  timeToRead: string
 }

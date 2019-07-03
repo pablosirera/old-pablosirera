@@ -39,10 +39,7 @@ export default new Router({
     {
       path: ROUTES.BLOG.ID(),
       name: 'BlogView',
-      component: BlogView,
-      props: (route: Route) => ({
-        nameComponent: route.params.nameComponent
-      })
+      component: BlogView
     },
     {
       path: ROUTES.ABOUT,

@@ -10,7 +10,15 @@
         :alt="post.altImage"
         class="image">
       <h2 class="title">{{ post.title }}</h2>
-      <span class="date">{{ getDate(post) }}</span>
+      <div class="bottom-post">
+        <span>
+          <font-awsome-icon
+            icon="stopwatch"
+            class="icon"/>
+          {{ getTimeToReadText(post.timeToRead) }}
+        </span>
+        <span class="date">{{ getDate(post) }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -19,6 +27,7 @@
 import Vue from 'vue'
 import { IPostsModel } from '@/models'
 import { POSTS } from '@/constants/posts'
+import { TranslateResult } from 'vue-i18n'
 
 export default Vue.extend({
   name: 'PostsList',
@@ -45,7 +54,7 @@ export default Vue.extend({
   },
   methods: {
     selectPost(nameComponent: string) {
-      this.$router.push({ name: 'BlogView', params: { nameComponent } })
+      this.$router.push({ name: 'BlogView', params: { id: nameComponent } })
     },
     getDate(post: any): string {
       const date = post.date
@@ -56,6 +65,11 @@ export default Vue.extend({
     getUrlImage(id: number) {
       const parseId = id.toString()
       return require(`@/assets/images/post${parseId}.jpg`)
+    },
+    getTimeToReadText(timeToRead: string): TranslateResult {
+      const keyTranslateText = parseInt(timeToRead) > 1 ? 'minutes' : 'minute'
+      const translateText = this.$i18n.t(`posts.${keyTranslateText}`)
+      return `${timeToRead} ${translateText}`
     }
   }
 })
@@ -106,11 +120,12 @@ export default Vue.extend({
       }
     }
 
-    .date {
+    .bottom-post {
       display: flex;
-      justify-content: flex-end;
-      opacity: 0.6;
+      justify-content: space-between;
+      align-items: center;
       padding-top: 5px;
+      opacity: 0.6;
     }
 
     .image {

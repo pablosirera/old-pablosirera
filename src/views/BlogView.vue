@@ -2,8 +2,8 @@
   <PageLayout>
     <section class="blog">
       <component 
-        v-if="nameComponent" 
-        :is="nameComponent"/>
+        v-if="idComponent" 
+        :is="idComponent"/>
     </section>
   </PageLayout>
 </template>
@@ -16,18 +16,17 @@ export default Vue.extend({
   name: 'BlogView',
   components: {
     PageLayout: () => import('@/components/PageLayout.vue'),
-    DeployAppsVue: () => import('@/posts/DeployAppsVue.vue'),
-    Addi18nVue: () => import('@/posts/Addi18nVue.vue'),
-    EventBus: () => import('@/posts/EventBus.vue')
+    'deploy-apps-vue': () => import('@/posts/DeployAppsVue.vue'),
+    'add-i18n-vue': () => import('@/posts/Addi18nVue.vue'),
+    'event-bus': () => import('@/posts/EventBus.vue')
   },
-  props: {
-    nameComponent: {
-      type: String,
-      required: true
-    }
-  },
+  data: () => ({
+    idComponent: ''
+  }),
   mounted() {
-    if (!POSTS_IDS.includes(this.nameComponent)) {
+    this.idComponent = this.$route.params.id
+
+    if (!POSTS_IDS.includes(this.idComponent)) {
       this.$router.push({ name: 'PostListView' })
     }
   }

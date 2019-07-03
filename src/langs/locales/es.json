@@ -105,7 +105,9 @@
       "title3": "Emitir un evento",
       "title4": "Recibir un evento",
       "title5": "Eliminar el evento"
-    }
+    },
+    "minute": "minuto",
+    "minutes": "minutos"
   },
   "projects": {
     "learningTracker": "Learning tracker sobre mis conocimientos.",
