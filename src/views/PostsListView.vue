@@ -4,13 +4,21 @@
       v-for="(post, index) in posts"
       :key="index"
       class="post"
-      @click="selectPost(post.id)">
+      @click="selectPost(post.nameComponent)">
       <img
         :src="getUrlImage(post.id)"
         :alt="post.altImage"
         class="image">
       <h2 class="title">{{ post.title }}</h2>
-      <span class="date">{{ getDate(post) }}</span>
+      <div class="bottom-post">
+        <span>
+          <font-awsome-icon
+            icon="stopwatch"
+            class="icon"/>
+          {{ getTimeToReadText(post.timeToRead) }}
+        </span>
+        <span class="date">{{ getDate(post) }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -19,6 +27,7 @@
 import Vue from 'vue'
 import { IPostsModel } from '@/models'
 import { POSTS } from '@/constants/posts'
+import { TranslateResult } from 'vue-i18n'
 
 export default Vue.extend({
   name: 'PostsList',
@@ -44,8 +53,8 @@ export default Vue.extend({
     }
   },
   methods: {
-    selectPost(idPost: number) {
-      this.$router.push({ name: 'BlogView', params: { id: idPost.toString() } })
+    selectPost(nameComponent: string) {
+      this.$router.push({ name: 'BlogView', params: { id: nameComponent } })
     },
     getDate(post: any): string {
       const date = post.date
@@ -56,6 +65,11 @@ export default Vue.extend({
     getUrlImage(id: number) {
       const parseId = id.toString()
       return require(`@/assets/images/post${parseId}.jpg`)
+    },
+    getTimeToReadText(timeToRead: string): TranslateResult {
+      const keyTranslateText = parseInt(timeToRead) > 1 ? 'minutes' : 'minute'
+      const translateText = this.$i18n.t(`posts.${keyTranslateText}`)
+      return `${timeToRead} ${translateText}`
     }
   }
 })
@@ -66,6 +80,7 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  max-width: 850px;
   width: 60%;
   margin: auto;
   padding-top: 30px;
@@ -105,11 +120,12 @@ export default Vue.extend({
       }
     }
 
-    .date {
+    .bottom-post {
       display: flex;
-      justify-content: flex-end;
-      opacity: 0.6;
+      justify-content: space-between;
+      align-items: center;
       padding-top: 5px;
+      opacity: 0.6;
     }
 
     .image {

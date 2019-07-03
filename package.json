@@ -10,6 +10,9 @@
     "lint:css": "stylelint '**/*.vue' --syntax scss"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "axios": "^0.18.0",
     "core-js": "^2.6.2",
     "highlight.js": "^9.13.1",

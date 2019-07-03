@@ -1,39 +1,32 @@
 <template>
   <PageLayout>
     <section class="blog">
-      <DeployAppsVue v-if="id === posts[0].id"/>
-      <Addi18nVue v-if="id === posts[1].id"/>
+      <component 
+        v-if="idComponent" 
+        :is="idComponent"/>
     </section>
   </PageLayout>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import PageLayout from '@/components/PageLayout.vue'
-import DeployAppsVue from '@/posts/DeployAppsVue.vue'
-import Addi18nVue from '@/posts/Addi18nVue.vue'
-import { POSTS, POSTS_IDS } from '@/constants/posts'
-import { ROUTES } from '@/constants/urlRoutes'
+import { POSTS_IDS } from '@/constants/posts'
 
 export default Vue.extend({
   name: 'BlogView',
   components: {
-    PageLayout,
-    DeployAppsVue,
-    Addi18nVue
+    PageLayout: () => import('@/components/PageLayout.vue'),
+    'deploy-apps-vue': () => import('@/posts/DeployAppsVue.vue'),
+    'add-i18n-vue': () => import('@/posts/Addi18nVue.vue'),
+    'event-bus': () => import('@/posts/EventBus.vue')
   },
-  props: {
-    id: {
-      type: Number
-    }
-  },
-  computed: {
-    posts() {
-      return POSTS
-    }
-  },
+  data: () => ({
+    idComponent: ''
+  }),
   mounted() {
-    if (!POSTS_IDS.includes(this.id)) {
+    this.idComponent = this.$route.params.id
+
+    if (!POSTS_IDS.includes(this.idComponent)) {
       this.$router.push({ name: 'PostListView' })
     }
   }

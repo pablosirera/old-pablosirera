@@ -87,7 +87,27 @@
       "p7-1": "• Finally, you have to run ",
       "p7-2": " to execute the script that was previously created. Once it is finished, the deployed application will be available in the GitHub Pages url.",
       "title": "How to deploy your Vue App into GithubPages"
-    }
+    },
+    "eventBus": {
+      "p1": "Alguna vez me ha hecho falta crear un poco de <b>magia oscura</b> en alguna aplicación. Algunos le llaman también <b>extraña comunicación entre componentes</b>, aunque puede usarse sin necesidad de estar en un componente. Para realizar esto, existe un patrón llamado <span class='code'><b>event bus pattern === publish-subscribe pattern</b></span> que se integra genial con <span class='vue'>Vue</span>. Cabe mencionar que este patrón no está considerado una buena práctica, pero no obstante creo que es recomendable conocerlo por si en algún momento nos hiciese falta.",
+      "p10": "Si quisiéramos eliminar todos los eventos, simplemente habría que usar <span class='code'>EventBus.$off()</span>.",
+      "p11": "Ejemplos para eliminar registros de eventos:",
+      "p2": "Lo primero que hay que hacer es crear un nuevo event bus y exportarlo.",
+      "p3": "Lo único que hemos hecho ha sido crear una nueva instancia de <span class='vue'>Vue</span> que podremos usar en cualquier parte de nuestra aplicación.",
+      "p4": "Ahora vamos a usar la instancia de event bus. Para esto, lo que hay que hacer es importarlo en el componente que queramos usarlo.",
+      "p5": "En el ejemplo, podemos observar que tenemos un componente con un botón. Al hacer click sobre él ejecuta un método y ese método emite un evento a través de nuestro <span class='code'>EventBus</span>. Lo que recibe como parámetro es un string que hace referencia al nombre del evento.",
+      "p6": "A continuación realizaremos el código en el componente que queremos que reciba este evento que terminamos de emitir.",
+      "p7": "En el componente donde recibimos el evento cargamos, en el lifecycle <span class='code'>mounted</span>, los eventos que queremos escuchar, para que así, cuando lancemos el <span class='code'>$emit</span> se llame a nuestro callback que pasamos por parámetro.",
+      "p8": "Si solo quisieramos escuchar el evento una sola vez, usaríamos <span class='code'>EventBus.$once(nameEvent, callback)</span>",
+      "p9": "Por último, cabe decir que una vez que queramos terminar de escuchar el evento deberíamos eliminar dicho registro. Para ello usáremos el método <span class='code'>EventBus.$off</span>, al cual podemos pasarle el nombre del evento que queremos eliminar y un callback o simplemente pasándole el nombre del evento.",
+      "title": "Global Event Bus with Vue.js",
+      "title2": "Configurar Event Bus",
+      "title3": "Emitir un evento",
+      "title4": "Recibir un evento",
+      "title5": "Eliminar el evento"
+    },
+    "minute": "minute",
+    "minutes": "minutes"
   },
   "projects": {
     "learningTracker": "Learning tracker about my knowledge.",
