@@ -2,28 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pablo Sirera Mata</title>
+    <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="<%= webpackConfig.output.publicPath %>favicon.ico" />
+
     <meta
       name="description"
-      content="Pablo Sirera Mata. Esta es mi página personal dónde podrás conocer todo sobre mi trabajo y mis proyectos."
+      content="Pablo Sirera Mata | Esta es mi página personal dónde podrás conocer todo sobre mi trabajo y mis proyectos."
     />
     <meta author="Pablo Sirera Mata" />
-    <link rel="shortcut icon" href="<%= webpackConfig.output.publicPath %>favicon.ico" />
-    <title>Pablo Sirera Mata</title>
+    <meta property="og:url" content="https://pablosirera.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@pablosirera" />
+    <meta name="twitter:domain" content="pablosirera.com" />
+    <meta name="twitter:site" content="@pablosirera" />
+    <meta name="twitter:title" content="Pablo Sirera Mata" />
+    <meta
+      name="twitter:description"
+      content="Pablo Sirera Mata | Bievenido a mi página personal sobre desarrollo web"
+    />
+
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Pablo Sirera Mata | Frontend 👨🏼‍💻, Javascript, Vue, CSS" />
+    <meta property="og:url" content=" https://pablosirera.com" />
+    <meta
+      property="og:description"
+      content="Artículos, sobre Desarrollo Web, Frontend, Javascript ☕️, Vue 💚 y CSS 🎨"
+    />
+    <meta property="og:site_name" content="pablosirera.com" />
+
+    <meta property="article:section" content="Home" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'UA-143056165-1')
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143056165-1"></script>
   </head>
   <body>
     <div id="app"></div>
   </body>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143056165-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
-
-    gtag('config', 'UA-143056165-1')
-  </script>
 </html>
