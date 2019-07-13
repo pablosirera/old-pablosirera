@@ -46,11 +46,11 @@ export default Vue.extend({
           description: this.$t('projects.learningTracker') as string,
           links: [
             {
-              url: 'https://github.com/pablosirera/timeline-vuejs',
+              url: 'https://github.com/pablosirera/My-Learning-Tracker',
               icon: 'github'
             },
             {
-              url: 'https://github.com/pablosirera/timeline-vuejs',
+              url: 'https://github.com/pablosirera/My-Learning-Tracker',
               icon: 'web'
             }
           ]
