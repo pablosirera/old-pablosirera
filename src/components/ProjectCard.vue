@@ -54,6 +54,7 @@ export default Vue.extend({
   .wrapper-image {
     border-bottom: 1px solid grey;
     max-height: 220px;
+    min-height: 220px;
     overflow: hidden;
     padding: 7px;
     display: flex;
