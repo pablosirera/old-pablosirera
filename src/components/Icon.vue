@@ -1,35 +1,30 @@
 <template>
-  <img
-    :class="size"
-    :alt="alt"
-    :src="getIconPath"
-    class="icon">
+  <img :class="size" :alt="alt" :src="getIconPath" class="icon" />
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+<script>
+export default {
   name: 'Icon',
   props: {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     size: {
       type: String,
-      default: 'small'
+      default: 'small',
     },
     alt: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
-    getIconPath(): string {
+    getIconPath() {
       return require(`@/assets/icons/${this.name}.png`)
-    }
-  }
-})
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

@@ -1,65 +1,60 @@
 {
-  "name": "portfolio",
+  "name": "pablosirera.github.io",
   "version": "0.1.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "vue-cli-service test",
     "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit --coverage --watch",
+    "test:unit:nowatch": "vue-cli-service test:unit --coverage --watch",
     "lint:css": "stylelint '**/*.vue' --syntax scss"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/vue-fontawesome": "^0.1.6",
-    "axios": "^0.18.0",
-    "core-js": "^2.6.2",
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
     "highlight.js": "^9.13.1",
-    "timeline-vuejs": "1.0.5",
-    "typescript": "3.0.3",
+    "timeline-vuejs": "1.0.9",
+    "register-service-worker": "^1.6.2",
     "v-tooltip": "^2.0.0-rc.33",
-    "vue": "^2.5.16",
-    "vue-i18n": "^7.6.0",
-    "vue-property-decorator": "^6.0.0",
-    "vue-router": "^3.0.1",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.14.0",
+    "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^22.0.1",
-    "@vue/cli": "3.0.0",
-    "@vue/cli-plugin-babel": "^3.5.1",
-    "@vue/cli-plugin-eslint": "3.0.0",
-    "@vue/cli-plugin-typescript": "3.0.0",
-    "@vue/cli-plugin-unit-jest": "^3.5.1",
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-pwa": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
-    "@vue/eslint-config-prettier": "3.0.0",
-    "@vue/eslint-config-typescript": "3.0.0",
-    "@vue/test-utils": "^1.0.0-beta.10",
-    "babel-core": "^7.0.0-0",
-    "lint-staged": "^6.0.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^6.0.7",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0",
     "stylelint-processor-html": "^1.0.0",
-    "ts-jest": "^24.0.0",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.6.10"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "gitHooks": {
-    "pre-commit": "lint-staged && npm run lint && npm run lint:css"
+    "pre-commit": "lint-staged",
+    "pre-push": "lint-staged && npm run lint && npm run lint:css"
   },
   "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
+    "*.{js,vue}": [
       "vue-cli-service lint",
       "git add"
     ]

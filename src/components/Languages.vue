@@ -4,59 +4,60 @@
       v-for="(lang, index) in arrayLanguages"
       :key="index"
       :class="getLanguageClass(lang.key)"
-      @click="changeLanguage(lang.key)">
+      @click="changeLanguage(lang.key)"
+    >
       <img
         v-if="hasIcon(lang.key)"
         :src="getIconUrl(lang.key)"
-        :alt="lang.alt">
+        :alt="lang.alt"
+      />
       <span v-else>{{ lang.text }}</span>
     </span>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import { LANGUAGES } from '@/langs/i18n'
+<script>
+import { LANGUAGES } from '@/shared/langs/i18n'
 
-export default Vue.extend({
+export default {
   name: 'Languages',
   props: {
     language: {
       type: String,
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     arrayLanguages() {
       if (LANGUAGES) return LANGUAGES
       return []
     },
-    defaultLanguage(): string {
+    defaultLanguage() {
       return this.language
-    }
+    },
   },
   methods: {
-    getIconUrl(name: string): string {
+    getIconUrl(name) {
       try {
         return require(`@/assets/icons/langs/${name}.png`)
       } catch (error) {
         return ''
       }
     },
-    hasIcon(key: string): boolean {
+    hasIcon(key) {
       return !!this.getIconUrl(key)
     },
-    changeLanguage(languageSelected: string) {
+    changeLanguage(languageSelected) {
       this.$emit('change-language', languageSelected)
     },
-    getLanguageClass(key: string): { [key: string]: boolean } {
+    getLanguageClass(key) {
       return {
         language: true,
-        selected: this.defaultLanguage === key
+        selected: this.defaultLanguage === key,
       }
-    }
-  }
-})
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
