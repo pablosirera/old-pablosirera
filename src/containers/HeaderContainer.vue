@@ -1,31 +1,27 @@
 <template>
   <PageLayout>
-    <AppHeader
-      :language="language"
-      @on-change-language="changeLanguage"/>
+    <AppHeader :language="language" @on-change-language="changeLanguage" />
   </PageLayout>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
 import { mapState, mapActions } from 'vuex'
-import { State as langState } from '@/store/modules/language/state'
-import AppHeader from '../components/Header.vue'
+import AppHeader from '../components/AppHeader.vue'
 import PageLayout from '@/components/PageLayout.vue'
 
-export default Vue.extend({
+export default {
   name: 'HeaderContainer',
   components: {
     AppHeader,
-    PageLayout
+    PageLayout,
   },
   computed: {
     ...mapState('langs', {
-      language: (state: langState) => state.language
-    })
+      language: state => state.language,
+    }),
   },
   methods: {
-    ...mapActions('langs', ['changeLanguage'])
-  }
-})
+    ...mapActions('langs', ['changeLanguage']),
+  },
+}
 </script>

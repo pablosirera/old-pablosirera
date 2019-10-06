@@ -1,9 +1,7 @@
 <template>
   <div class="project-card">
     <div class="wrapper-image">
-      <img
-        :src="getUrlImage(projectData.image)"
-        alt="Image">
+      <img :src="getUrlImage(projectData.image)" alt="Image" />
     </div>
     <div class="description">
       <h4 class="title">{{ projectData.name }}</h4>
@@ -12,13 +10,13 @@
         <div
           v-for="(link, index) in projectData.links"
           :key="index"
-          class="link">
-          <a
-            :href="link.url"
-            target="_blank">
+          class="link"
+        >
+          <a :href="link.url" target="_blank">
             <img
               :src="getUrlImage(`icons/${link.icon}.png`)"
-              :alt="link.icon">
+              :alt="link.icon"
+            />
           </a>
         </div>
       </div>
@@ -26,24 +24,21 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue, { PropOptions } from 'vue'
-import { ProjectCardModel } from '@/models/ProjectCardModel'
-
-export default Vue.extend({
+<script>
+export default {
   name: 'ProjectCard',
   props: {
     projectData: {
       type: Object,
-      default: new ProjectCardModel()
-    } as PropOptions<ProjectCardModel>
+      default: undefined,
+    },
   },
   methods: {
-    getUrlImage(image: string) {
+    getUrlImage(image) {
       return require(`@/assets/${image}`)
-    }
-  }
-})
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

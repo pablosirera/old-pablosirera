@@ -4,22 +4,21 @@
       <h1>404</h1>
       <h2 class="error-text">{{ $t('notFound.errorText') }}</h2>
     </div>
-    <button
-      class="button"
-      @click="goToHome()">{{ $t('notFound.button') }}</button>
+    <button class="button" @click="goToHome()">
+      {{ $t('notFound.button') }}
+    </button>
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+<script>
+export default {
   name: 'NotFoundComponent',
   methods: {
     goToHome() {
       this.$router.push({ name: 'HomeView' })
-    }
-  }
-})
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

@@ -1,14 +1,13 @@
 <template>
   <section class="container">
-    <slot/>
+    <slot />
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'PageLayout'
-})
+<script>
+export default {
+  name: 'PageLayout',
+}
 </script>
 
 <style lang="scss" scoped>
