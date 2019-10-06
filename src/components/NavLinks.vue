@@ -4,7 +4,9 @@
       v-for="(link, index) in links"
       :key="index"
       :to="link.url"
-      class="link">{{ link.name }} <span v-if="index !== lastLink">| </span></router-link>
+      class="link"
+      >{{ link.name }} <span v-if="index !== lastLink">| </span></router-link
+    >
   </nav>
 </template>
 
@@ -12,30 +14,31 @@
 export default {
   name: 'NavLinks',
   data: () => ({
+    // TODO: use routes constants
     links: [
       {
         url: '/home',
-        name: 'Home'
+        name: 'Home',
       },
       {
         url: '/projects',
-        name: 'Projects'
+        name: 'Projects',
       },
       {
         url: '/blog',
-        name: 'Blog'
+        name: 'Blog',
       },
       {
         url: '/about',
-        name: 'About'
-      }
-    ]
+        name: 'About',
+      },
+    ],
   }),
   computed: {
     lastLink() {
       return this.links.length - 1
-    }
-  }
+    },
+  },
 }
 </script>
 

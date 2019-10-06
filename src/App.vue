@@ -5,16 +5,15 @@
   </main>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
 import HeaderContainer from '@/containers/HeaderContainer.vue'
 
-export default Vue.extend({
+export default {
   name: 'App',
   components: {
-    HeaderContainer
-  }
-})
+    HeaderContainer,
+  },
+}
 </script>
 
 <style lang="scss">
