@@ -7,12 +7,16 @@
 <script>
 import SocialContainer from '@/containers/SocialContainer.vue'
 import PageLayout from '@/components/PageLayout.vue'
+import { ROUTES } from '@/shared/constants'
 
 export default {
   name: 'HomeView',
   components: {
     SocialContainer,
     PageLayout,
+  },
+  mounted() {
+    this.$ga.page(ROUTES.HOME)
   },
 }
 </script>

@@ -7,6 +7,7 @@
       :alt="$t('home.principalImage')"
       class="personal-logo"
       src="@/assets/images/logo.png"
+      @click="navigateToHome()"
     />
 
     <section v-if="!isNotFound">
@@ -61,6 +62,9 @@ export default {
     changeLanguage(languageSelected) {
       this.$emit('on-change-language', languageSelected)
     },
+    navigateToHome() {
+      this.$router.push({ path: ROUTES.HOME })
+    },
   },
 }
 </script>
@@ -104,6 +108,7 @@ export default {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 160px;
+    cursor: pointer;
   }
 
   .wrapp-principal-information {

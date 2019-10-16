@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { POSTS } from '@/shared/constants/posts'
+import { POSTS, ROUTES } from '@/shared/constants'
 
 export default {
   name: 'PostsList',
@@ -44,6 +44,9 @@ export default {
         this.$t('months.december'),
       ]
     },
+  },
+  mounted() {
+    this.$ga.page(ROUTES.BLOG.BASE_URL)
   },
   methods: {
     selectPost(nameComponent) {

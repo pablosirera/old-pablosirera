@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { POSTS_IDS } from '@/shared/constants/posts'
+import { POSTS_IDS, ROUTES } from '@/shared/constants'
 
 export default {
   name: 'BlogView',
@@ -22,6 +22,8 @@ export default {
   }),
   mounted() {
     this.idComponent = this.$route.params.id
+
+    this.$ga.page(`${ROUTES.BLOG.BASE_URL}/${this.idComponent}`)
 
     if (!POSTS_IDS.includes(this.idComponent)) {
       this.$router.push({ name: 'PostListView' })

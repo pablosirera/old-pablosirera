@@ -6,7 +6,6 @@ Vue.use(Router)
 
 // TODO: add name routes into constants
 export default new Router({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
