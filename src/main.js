@@ -9,7 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStopwatch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import './registerServiceWorker'
+// import './registerServiceWorker'
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 import 'highlight.js/styles/dracula.css'
 
