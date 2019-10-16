@@ -14,6 +14,7 @@
 <script>
 import PageLayout from '@/components/PageLayout.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
+import { ROUTES } from '@/shared/constants'
 
 export default {
   name: 'ProjectsView',
@@ -56,6 +57,9 @@ export default {
         },
       ]
     },
+  },
+  mounted() {
+    this.$ga.page(ROUTES.PROJECTS)
   },
 }
 </script>

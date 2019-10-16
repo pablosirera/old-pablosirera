@@ -45,6 +45,7 @@
 import { mapGetters } from 'vuex'
 import PageLayout from '@/components/PageLayout.vue'
 import Timeline from 'timeline-vuejs'
+import { ROUTES } from '@/shared/constants'
 
 export default {
   name: 'AboutView',
@@ -71,6 +72,9 @@ export default {
         },
       ]
     },
+  },
+  mounted() {
+    this.$ga.page(ROUTES.ABOUT)
   },
 }
 </script>
