@@ -63,6 +63,24 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-143056165-1"
     ></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: 'AIzaSyA-tp3neYFngbJPyuSlTYxTf4HWTLOBpvs',
+        authDomain: 'pablosireram.firebaseapp.com',
+        databaseURL: 'https://pablosirera.com',
+        projectId: 'pablosireram',
+        storageBucket: 'pablosireram.appspot.com',
+        messagingSenderId: '1047888488154',
+        appId: '1:1047888488154:web:ca43fb5630dcb413a567e3',
+        measurementId: 'G-CZBEES4RTB',
+      }
+
+      firebase.initializeApp(firebaseConfig)
+      firebase.analytics()
+    </script>
   </head>
   <body>
     <div id="app"></div>
