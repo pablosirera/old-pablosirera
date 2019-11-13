@@ -80,6 +80,21 @@
 
       firebase.initializeApp(firebaseConfig)
       firebase.analytics()
+      var performance_standalone =
+        'https://www.gstatic.com/firebasejs/6.4.0/firebase-performance-standalone.js'
+      ;(function(sa, fbc) {
+        function load(f, c) {
+          var a = document.createElement('script')
+          a.async = 1
+          a.src = f
+          var s = document.getElementsByTagName('script')[0]
+          s.parentNode.insertBefore(a, s)
+        }
+        load(sa)
+        window.onload = function() {
+          firebase.initializeApp(fbc).performance()
+        }
+      })(performance_standalone, firebaseConfig)
     </script>
   </head>
   <body>
