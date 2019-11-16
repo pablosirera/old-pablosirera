@@ -5,9 +5,9 @@
         <p>{{ $t('about.description1') }}</p>
         <p>
           {{ $t('about.description2_1') }}
-          <a class="link" target="_blank" href="https://github.com/pablosirera"
-            >GitHub</a
-          >
+          <a class="link" target="_blank" href="https://github.com/pablosirera">
+            GitHub
+          </a>
           {{ $t('about.description2_2') }}
           <a
             class="link"
@@ -26,15 +26,20 @@
             >Instagram</a
           >
           {{ $t('about.description3_2') }}
-          <a class="link" target="_blank" href="https://twitter.com/pablosirera"
-            >Twitter</a
+          <a
+            class="link"
+            target="_blank"
+            href="https://twitter.com/pablosirera"
           >
+            Twitter
+          </a>
         </p>
       </div>
       <Timeline
         :message-when-no-items="messageWhenNoItems"
         :timeline-items="timelineItems"
         :date-locale="getLocaleLanguage"
+        order="desc"
         class="about-timeline"
       />
     </section>
@@ -60,6 +65,11 @@ export default {
     },
     timelineItems() {
       return [
+        {
+          from: new Date(2019, 9),
+          title: 'Deka Software Labs',
+          description: `${this.$t('about.timeline.descDekalabs')}`,
+        },
         {
           from: new Date(2017, 2),
           title: 'Sopra Steria',
