@@ -24,6 +24,9 @@ import { mapState } from 'vuex'
 import { POSTS, ROUTES } from '@/shared/constants'
 
 export default {
+  title() {
+    return this.$t('blog.title')
+  },
   name: 'PostsList',
   computed: {
     ...mapState('langs', ['language']),

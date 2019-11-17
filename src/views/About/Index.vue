@@ -53,6 +53,9 @@ import Timeline from 'timeline-vuejs'
 import { ROUTES } from '@/shared/constants'
 
 export default {
+  title() {
+    return this.$t('about.title')
+  },
   name: 'AboutView',
   components: {
     PageLayout,
