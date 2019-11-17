@@ -20,13 +20,15 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import { POSTS, ROUTES } from '@/shared/constants'
 
 export default {
   name: 'PostsList',
   computed: {
+    ...mapState('langs', ['language']),
     posts() {
-      return POSTS
+      return POSTS(this.language)
     },
     monthNames() {
       return [
