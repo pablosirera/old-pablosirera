@@ -7,9 +7,11 @@
 </template>
 
 <script>
-import { POSTS_IDS, ROUTES } from '@/shared/constants'
+import { POSTS_IDS, POSTS, ROUTES } from '@/shared/constants'
+import { mapState } from 'vuex'
 
 export default {
+  title: 'Pablo Sirera Mata',
   name: 'BlogView',
   components: {
     PageLayout: () => import('@/components/PageLayout.vue'),
@@ -20,6 +22,12 @@ export default {
   data: () => ({
     idComponent: '',
   }),
+  computed: {
+    ...mapState('langs', ['language']),
+  },
+  created() {
+    this.setDocumentTitle(this.$route.params.id)
+  },
   mounted() {
     this.idComponent = this.$route.params.id
 
@@ -28,6 +36,13 @@ export default {
     if (!POSTS_IDS.includes(this.idComponent)) {
       this.$router.push({ name: 'PostListView' })
     }
+  },
+  methods: {
+    setDocumentTitle(id) {
+      const title = POSTS(this.language).find(post => post.nameComponent === id)
+        .title
+      document.title = title
+    },
   },
 }
 </script>

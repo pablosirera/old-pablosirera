@@ -17,6 +17,9 @@ import ProjectCard from '@/components/ProjectCard.vue'
 import { ROUTES } from '@/shared/constants'
 
 export default {
+  title() {
+    return this.$t('projects.title')
+  },
   name: 'ProjectsView',
   components: {
     PageLayout,

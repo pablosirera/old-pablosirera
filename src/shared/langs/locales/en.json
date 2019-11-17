@@ -9,12 +9,16 @@
     "timeline": {
       "currently": "Currently",
       "descBonProfit": "<b>Admin of an e-commerce</b> for a company in the meat industry.",
-      "descSopra": "<b>Frontend developer</b> for web and mobile applications. Using VueJS, Angular, HTML, CSS, SASS, Ionic.",
       "descDekalabs": "<b>Senior frontend</b> developing applications RWD (Responsive Web Design) with VueJS, Nuxt, HTML, SASS.",
+      "descSopra": "<b>Frontend developer</b> for web and mobile applications. Using VueJS, Angular, HTML, CSS, SASS, Ionic.",
       "emptyData": "Empty data.",
       "juny": "Juny",
       "march": "March"
-    }
+    },
+    "title": "Info about Pablo Sirera"
+  },
+  "blog": {
+    "title": "Articles about web development 👨🏼‍💻 | Pablo Sirera"
   },
   "home": {
     "principalImage": "Principal image"
@@ -112,6 +116,7 @@
   },
   "projects": {
     "learningTracker": "Learning tracker about my knowledge.",
-    "timeline": "Minimalist Timeline with VueJS."
+    "timeline": "Minimalist Timeline with VueJS.",
+    "title": "List of personal projects | Pablo Sirera"
   }
 }

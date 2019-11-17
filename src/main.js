@@ -10,9 +10,12 @@ import { faStopwatch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueAnalytics from 'vue-analytics'
 
-// import './registerServiceWorker'
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 import 'highlight.js/styles/dracula.css'
+
+import titleMixin from '@/shared/mixins/titleMixin'
+
+Vue.mixin(titleMixin)
 
 library.add(faStopwatch)
 Vue.component('font-awsome-icon', FontAwesomeIcon)

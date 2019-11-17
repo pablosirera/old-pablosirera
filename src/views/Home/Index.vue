@@ -10,6 +10,7 @@ import PageLayout from '@/components/PageLayout.vue'
 import { ROUTES } from '@/shared/constants'
 
 export default {
+  title: 'Pablo Sirera Mata',
   name: 'HomeView',
   components: {
     SocialContainer,
