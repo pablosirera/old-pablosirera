@@ -6,8 +6,8 @@
       class="post"
       @click="selectPost(post.nameComponent)"
     >
-      <img :src="getUrlImage(post.id)" :alt="post.altImage" class="image" />
-      <h2 class="title">{{ post.title }}</h2>
+      <img :src="getUrlImage(post.id)" :alt="$t(post.altImage)" class="image" />
+      <h2 class="title">{{ $t(post.title) }}</h2>
       <div class="bottom-post">
         <span>
           <font-awsome-icon icon="stopwatch" class="icon" />
@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import { POSTS, ROUTES } from '@/shared/constants'
 
 export default {
@@ -29,9 +28,8 @@ export default {
   },
   name: 'PostsList',
   computed: {
-    ...mapState('langs', ['language']),
     posts() {
-      return POSTS(this.language)
+      return POSTS
     },
     monthNames() {
       return [

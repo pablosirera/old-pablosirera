@@ -2,29 +2,29 @@
   <PageLayout>
     <section class="blog">
       <component :is="idComponent" v-if="idComponent" />
+      <CoffeeWidget />
     </section>
   </PageLayout>
 </template>
 
 <script>
 import { POSTS_IDS, POSTS, ROUTES } from '@/shared/constants'
-import { mapState } from 'vuex'
+import CoffeeWidget from '@/components/CoffeeWidget'
 
 export default {
   title: 'Pablo Sirera Mata',
   name: 'BlogView',
   components: {
+    CoffeeWidget,
     PageLayout: () => import('@/components/PageLayout.vue'),
     'deploy-apps-vue': () => import('@/views/Posts/DeployAppsVue.vue'),
     'add-i18n-vue': () => import('@/views/Posts/Addi18nVue.vue'),
     'event-bus': () => import('@/views/Posts/EventBus.vue'),
+    'scaffolding-vue': () => import('@/views/Posts/ScaffoldingVue.vue'),
   },
   data: () => ({
     idComponent: '',
   }),
-  computed: {
-    ...mapState('langs', ['language']),
-  },
   created() {
     this.setDocumentTitle(this.$route.params.id)
   },
@@ -39,8 +39,7 @@ export default {
   },
   methods: {
     setDocumentTitle(id) {
-      const title = POSTS(this.language).find(post => post.nameComponent === id)
-        .title
+      const title = this.$t(POSTS.find(post => post.nameComponent === id).title)
       document.title = title
     },
   },
@@ -58,5 +57,7 @@ export default {
       width: 100%;
     }
   }
+
+  margin-bottom: 50px;
 }
 </style>
