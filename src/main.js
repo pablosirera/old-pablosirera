@@ -9,6 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStopwatch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueAnalytics from 'vue-analytics'
+import VueMarkdown from 'vue-markdown'
 
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 import 'highlight.js/styles/dracula.css'
@@ -19,8 +20,9 @@ Vue.mixin(titleMixin)
 
 library.add(faStopwatch)
 Vue.component('font-awsome-icon', FontAwesomeIcon)
-Vue.use(VTooltip)
+Vue.component('vue-markdown', VueMarkdown)
 
+Vue.use(VTooltip)
 Vue.use(VueAnalytics, {
   id: 'UA-143056165-1',
 })

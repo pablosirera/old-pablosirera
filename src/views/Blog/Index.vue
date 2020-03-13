@@ -18,6 +18,7 @@ export default {
     'deploy-apps-vue': () => import('@/views/Posts/DeployAppsVue.vue'),
     'add-i18n-vue': () => import('@/views/Posts/Addi18nVue.vue'),
     'event-bus': () => import('@/views/Posts/EventBus.vue'),
+    'scaffolding-vue': () => import('@/views/Posts/ScaffoldingVue.vue'),
   },
   data: () => ({
     idComponent: '',
