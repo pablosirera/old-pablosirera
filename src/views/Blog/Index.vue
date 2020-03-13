@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     setDocumentTitle(id) {
-      const title = POSTS.find(post => post.nameComponent === id).title
+      const title = this.$t(POSTS.find(post => post.nameComponent === id).title)
       document.title = title
     },
   },

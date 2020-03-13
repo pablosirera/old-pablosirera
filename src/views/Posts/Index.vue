@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import { POSTS, ROUTES } from '@/shared/constants'
 
 export default {
@@ -29,9 +28,8 @@ export default {
   },
   name: 'PostsList',
   computed: {
-    ...mapState('langs', ['language']),
     posts() {
-      return POSTS(this.language)
+      return POSTS
     },
     monthNames() {
       return [

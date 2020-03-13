@@ -33,4 +33,4 @@ export const POSTS = [
   },
 ]
 
-export const POSTS_IDS = POSTS().map(post => post.nameComponent)
+export const POSTS_IDS = POSTS.map(post => post.nameComponent)

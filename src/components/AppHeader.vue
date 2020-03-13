@@ -1,6 +1,6 @@
 <template>
   <header :class="navClasses">
-    <Languages :language="language" @change-language="changeLanguage" />
+    <!-- <Languages :language="language" @change-language="changeLanguage" /> -->
 
     <img
       v-if="!isHomeView"
@@ -35,7 +35,7 @@ import { ROUTES } from '@/shared/constants'
 export default {
   name: 'AppHeader',
   components: {
-    Languages: () => import('@/components/Languages.vue'),
+    // Languages: () => import('@/components/Languages.vue'),
     NavLinks: () => import('@/components/NavLinks.vue'),
   },
   props: {
