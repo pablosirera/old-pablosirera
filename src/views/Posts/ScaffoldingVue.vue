@@ -11,6 +11,7 @@
       <p v-html="$t('posts.scaffoldingVue.p4')" />
       <span class="image">
         <img
+          class="custom-shadow"
           src="@/assets/images/scaffolding/1.png"
           :alt="$t('posts.scaffoldingVue.alt1')"
         />
@@ -18,6 +19,7 @@
       <p v-html="$t('posts.scaffoldingVue.p5')" />
       <span class="image">
         <img
+          class="custom-shadow"
           src="@/assets/images/scaffolding/2.png"
           :alt="$t('posts.scaffoldingVue.alt2')"
         />
@@ -28,6 +30,7 @@
       <p v-html="$t('posts.scaffoldingVue.p6')" />
       <span class="image">
         <img
+          class="custom-shadow"
           src="@/assets/images/scaffolding/3.png"
           :alt="$t('posts.scaffoldingVue.alt3')"
         />
@@ -40,6 +43,7 @@
       <p v-html="$t('posts.scaffoldingVue.p9')" />
       <span class="image">
         <img
+          class="custom-shadow"
           src="@/assets/images/scaffolding/4.png"
           :alt="$t('posts.scaffoldingVue.alt4')"
         />
@@ -51,6 +55,7 @@
       <p v-html="$t('posts.scaffoldingVue.p11')" />
       <span class="image">
         <img
+          class="custom-shadow"
           src="@/assets/images/scaffolding/5.png"
           :alt="$t('posts.scaffoldingVue.alt5')"
         />

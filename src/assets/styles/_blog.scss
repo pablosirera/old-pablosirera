@@ -31,15 +31,19 @@
       margin: 0 auto;
       margin-top: 20px;
       margin-bottom: 30px;
+
       img {
         border-radius: 5px;
         max-width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 32px 32px 0px,
-          rgba(0, 0, 0, 0.15) 0px 16px 16px 0px,
-          rgba(0, 0, 0, 0.15) 0px 8px 8px 0px,
-          rgba(0, 0, 0, 0.15) 0px 4px 4px 0px;
       }
     }
+
+    .custom-shadow {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 32px 32px 0px,
+        rgba(0, 0, 0, 0.15) 0px 16px 16px 0px,
+        rgba(0, 0, 0, 0.15) 0px 8px 8px 0px, rgba(0, 0, 0, 0.15) 0px 4px 4px 0px;
+    }
+
     .code {
       background-color: #1f8ed540;
       color: #1a1a1a;

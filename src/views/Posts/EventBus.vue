@@ -6,7 +6,7 @@
       <h3 class="secondary-title">{{ $t('posts.eventBus.title2') }}</h3>
       <p v-html="$t('posts.eventBus.p2')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     // event-bus.js
 
     import Vue from 'vue'
@@ -17,7 +17,7 @@
       <h3 class="secondary-title">{{ $t('posts.eventBus.title3') }}</h3>
       <p v-html="$t('posts.eventBus.p4')" />
       <pre v-highlightjs>
-        <code class="html">
+        <code class="html custom-shadow">
     // TestButton.vue
 
     &lt;template&gt;
@@ -42,7 +42,7 @@
       <h3 class="secondary-title">{{ $t('posts.eventBus.title4') }}</h3>
       <p v-html="$t('posts.eventBus.p6')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     // SomeList.vue
 
     import { EventBus } from '@/utils/event-bus.js'
@@ -70,7 +70,7 @@
       <p v-html="$t('posts.eventBus.p10')" />
       <p v-html="$t('posts.eventBus.p11')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     import { EventBus } from '@/utils/event-bus.js'
 
     // Stop register without callback

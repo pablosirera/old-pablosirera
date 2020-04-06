@@ -5,7 +5,7 @@
       <p>{{ $t('posts.deployAppsVue.p1') }}</p>
       <p v-html="$t('posts.deployAppsVue.p2')" />
       <pre v-highlightjs>
-        <code class="bash">  git checkout -b github-pages</code>
+        <code class="bash custom-shadow">  git checkout -b github-pages</code>
       </pre>
       <p v-html="$t('posts.deployAppsVue.p3')" />
       <p>
@@ -14,7 +14,7 @@
         >{{ $t('posts.deployAppsVue.p4-2') }}
       </p>
       <pre v-highlightjs>
-        <code class="shell">
+        <code class="shell custom-shadow">
     #!/usr/bin/env sh
 
     # abort on errors

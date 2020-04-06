@@ -8,14 +8,14 @@
       <h3 class="secondary-title">{{ $t('posts.addI18nVue.title2') }}</h3>
       <p>{{ $t('posts.addI18nVue.p3') }}</p>
       <pre v-highlightjs>
-        <code class="bash">  npm install vue-i18n --save</code>
+        <code class="bash custom-shadow">  npm install vue-i18n --save</code>
       </pre>
       <p v-html="$t('posts.addI18nVue.p4')" />
       <p v-html="$t('posts.addI18nVue.p5')" />
       <p v-html="$t('posts.addI18nVue.p6')" />
       <p v-html="$t('posts.addI18nVue.p7')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     import Vue from 'vue'
     import VueI18n from 'vue-i18n'
 
@@ -30,7 +30,7 @@
       <p v-html="$t('posts.addI18nVue.p8')" />
       <p v-html="$t('posts.addI18nVue.p9')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     export const i18n = new VueI18n({
       locale: 'es',
       fallbackLocale: 'en',
@@ -41,19 +41,19 @@
       <p v-html="$t('posts.addI18nVue.p10')" />
       <p v-html="$t('posts.addI18nVue.p11')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     locale: window.navigator.language.split('-')[0]
         </code>
       </pre>
       <p v-html="$t('posts.addI18nVue.p12')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     import { i18n } from '@/plugins/i18n'
         </code>
       </pre>
       <p v-html="$t('posts.addI18nVue.p13')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     import Vue from 'vue'
     import App from './App.vue'
     import { i18n } from '@/plugins/i18n'
@@ -71,7 +71,7 @@
       </h3>
       <p v-html="$t('posts.addI18nVue.p14')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     const messages = {
       es: {
         hello: 'Hola Mundo!'
@@ -85,14 +85,14 @@
       <p v-html="$t('posts.addI18nVue.p15')" />
       <p v-html="$t('posts.addI18nVue.p16')" />
       <pre v-highlightjs>
-        <code class="hljs">
+        <code class="hljs custom-shadow">
     {{ sourceCode }}
         </code>
       </pre>
       <p v-html="$t('posts.addI18nVue.p17')" />
       <p v-html="$t('posts.addI18nVue.p18')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     const messages = {
       es: {
         hello: {
@@ -109,7 +109,7 @@
       </pre>
       <p v-html="$t('posts.addI18nVue.p19')" />
       <pre v-highlightjs>
-        <code class="hljs">
+        <code class="hljs custom-shadow">
     {{ sourceCode2 }}
         </code>
       </pre>
@@ -119,7 +119,7 @@
       <p v-html="$t('posts.addI18nVue.p20')" />
       <p v-html="$t('posts.addI18nVue.p21')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     // Language.vue
     &lt;template&gt;
       &lt;div&gt;
@@ -154,7 +154,7 @@
       </pre>
       <p v-html="$t('posts.addI18nVue.p22')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     // App.vue
     &lt;template&gt;
       ...
@@ -177,7 +177,7 @@
       <p v-html="$t('posts.addI18nVue.p23')" />
       <p v-html="$t('posts.addI18nVue.p24')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     const messages = {
       es: {
         hello: {
@@ -198,7 +198,7 @@
       </pre>
       <p v-html="$t('posts.addI18nVue.p25')" />
       <pre v-highlightjs>
-        <code class="js">
+        <code class="js custom-shadow">
     import { i18n } from '@/plugins/i18n'
 
     export default {
