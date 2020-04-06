@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss" scoped>
 .coffee-button {
-  padding: 7px 10px 7px 10px;
   line-height: 35px;
   height: 51px;
   min-width: 217px;
