@@ -16,7 +16,7 @@
           <img
             :alt="$t('home.principalImage')"
             class="principal-image"
-            src="@/assets/images/home-image.png"
+            src="https://res.cloudinary.com/de5xzoviz/image/upload/v1586160910/home-image_ecj8bc.png"
           />
         </div>
         <section v-if="isHomeView" class="description-wrapper">

@@ -6,7 +6,7 @@
       class="post"
       @click="selectPost(post.nameComponent)"
     >
-      <img :src="getUrlImage(post.id)" :alt="$t(post.altImage)" class="image" />
+      <img :src="post.image" :alt="$t(post.altImage)" class="image" />
       <h2 class="title">{{ $t(post.title) }}</h2>
       <div class="bottom-post">
         <span>
@@ -60,10 +60,6 @@ export default {
       const year = date.getFullYear()
       const month = this.monthNames[date.getMonth()]
       return `${month}, ${year}`
-    },
-    getUrlImage(id) {
-      const parseId = id.toString()
-      return require(`@/assets/images/post${parseId}.jpg`)
     },
     getTimeToReadText(timeToRead) {
       const keyTranslateText = parseInt(timeToRead) > 1 ? 'minutes' : 'minute'
