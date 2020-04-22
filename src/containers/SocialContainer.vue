@@ -19,6 +19,15 @@
       <Icon name="instagram" alt="pablodeveloper" />
     </a>
     <a
+      v-tooltip.bottom="'twitch.tv/pablosirera'"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link-icon"
+      href="https://www.twitch.tv/pablosirera"
+    >
+      <Icon name="twitch" alt="pablosirera" />
+    </a>
+    <a
       v-tooltip.bottom="'linkedin.com/in/pablosireramata'"
       target="_blank"
       rel="noopener noreferrer"
