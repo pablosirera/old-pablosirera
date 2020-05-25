@@ -29,34 +29,43 @@ export default {
     projects() {
       return [
         {
-          image: 'images/timeline-vuejs.png',
-          name: 'Timeline VueJS',
+          name: 'timeline-vuejs',
           description: this.$t('projects.timeline'),
-          links: [
-            {
-              url: 'https://github.com/pablosirera/timeline-vuejs',
-              icon: 'github',
-            },
-            {
-              url: 'https://github.com/pablosirera/timeline-vuejs',
-              icon: 'web',
-            },
-          ],
+          language: 'Vue',
+          stars: 51,
+          forks: 13,
+          url: 'https://github.com/pablosirera/timeline-vuejs',
         },
         {
-          image: 'images/my-learning-tracker.png',
-          name: 'My Learning Tracker',
+          name: 'My-Learning-Tracker',
           description: this.$t('projects.learningTracker'),
-          links: [
-            {
-              url: 'https://github.com/pablosirera/My-Learning-Tracker',
-              icon: 'github',
-            },
-            {
-              url: 'https://github.com/pablosirera/My-Learning-Tracker',
-              icon: 'web',
-            },
-          ],
+          stars: 2,
+          forks: 0,
+          url: 'https://github.com/pablosirera/My-Learning-Tracker',
+        },
+        {
+          name: 'tracking-plants',
+          description: this.$t('projects.trackingPlants'),
+          language: 'JavaScript',
+          stars: 1,
+          forks: 0,
+          url: 'https://github.com/pablosirera/tracking-plants',
+        },
+        {
+          name: 'tracking-plants',
+          description: this.$t('projects.trackingPlants'),
+          language: 'JavaScript',
+          stars: 1,
+          forks: 0,
+          url: 'https://github.com/pablosirera/tracking-plants',
+        },
+        {
+          name: 'who-reviews',
+          description: this.$t('projects.whoReviews'),
+          language: 'JavaScript',
+          stars: 0,
+          forks: 0,
+          url: 'https://github.com/pablosirera/who-reviews',
         },
       ]
     },
