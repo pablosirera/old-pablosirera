@@ -37,13 +37,6 @@ export default {
           url: 'https://github.com/pablosirera/timeline-vuejs',
         },
         {
-          name: 'My-Learning-Tracker',
-          description: this.$t('projects.learningTracker'),
-          stars: 2,
-          forks: 0,
-          url: 'https://github.com/pablosirera/My-Learning-Tracker',
-        },
-        {
           name: 'tracking-plants',
           description: this.$t('projects.trackingPlants'),
           language: 'JavaScript',
@@ -66,6 +59,21 @@ export default {
           stars: 0,
           forks: 0,
           url: 'https://github.com/pablosirera/who-reviews',
+        },
+        {
+          name: 'pablosirera.github.io',
+          description: this.$t('projects.portfolio'),
+          language: 'Vue',
+          stars: 1,
+          forks: 0,
+          url: 'https://github.com/pablosirera/pablosirera.github.io',
+        },
+        {
+          name: 'My-Learning-Tracker',
+          description: this.$t('projects.learningTracker'),
+          stars: 2,
+          forks: 0,
+          url: 'https://github.com/pablosirera/My-Learning-Tracker',
         },
       ]
     },
