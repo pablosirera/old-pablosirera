@@ -4,7 +4,7 @@
       <ProjectCard
         v-for="(project, index) in projects"
         :key="index"
-        :project-data="project"
+        :project="project"
         class="project"
       />
     </section>
@@ -29,34 +29,51 @@ export default {
     projects() {
       return [
         {
-          image: 'images/timeline-vuejs.png',
-          name: 'Timeline VueJS',
+          name: 'timeline-vuejs',
           description: this.$t('projects.timeline'),
-          links: [
-            {
-              url: 'https://github.com/pablosirera/timeline-vuejs',
-              icon: 'github',
-            },
-            {
-              url: 'https://github.com/pablosirera/timeline-vuejs',
-              icon: 'web',
-            },
-          ],
+          language: 'Vue',
+          stars: 51,
+          forks: 13,
+          url: 'https://github.com/pablosirera/timeline-vuejs',
         },
         {
-          image: 'images/my-learning-tracker.png',
-          name: 'My Learning Tracker',
+          name: 'tracking-plants',
+          description: this.$t('projects.trackingPlants'),
+          language: 'JavaScript',
+          stars: 1,
+          forks: 0,
+          url: 'https://github.com/pablosirera/tracking-plants',
+        },
+        {
+          name: 'nearest-bin',
+          description: this.$t('projects.nearestBin'),
+          language: 'Vue',
+          stars: 0,
+          forks: 0,
+          url: 'https://github.com/pablosirera/nearest-bin',
+        },
+        {
+          name: 'who-reviews',
+          description: this.$t('projects.whoReviews'),
+          language: 'JavaScript',
+          stars: 0,
+          forks: 0,
+          url: 'https://github.com/pablosirera/who-reviews',
+        },
+        {
+          name: 'pablosirera.github.io',
+          description: this.$t('projects.portfolio'),
+          language: 'Vue',
+          stars: 1,
+          forks: 0,
+          url: 'https://github.com/pablosirera/pablosirera.github.io',
+        },
+        {
+          name: 'My-Learning-Tracker',
           description: this.$t('projects.learningTracker'),
-          links: [
-            {
-              url: 'https://github.com/pablosirera/My-Learning-Tracker',
-              icon: 'github',
-            },
-            {
-              url: 'https://github.com/pablosirera/My-Learning-Tracker',
-              icon: 'web',
-            },
-          ],
+          stars: 2,
+          forks: 0,
+          url: 'https://github.com/pablosirera/My-Learning-Tracker',
         },
       ]
     },
@@ -69,25 +86,19 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  width: 60%;
+  margin: 0 auto;
 
-  & .project {
-    margin-left: 25px;
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
 
-    @media (max-width: 540px) {
-      margin-left: 0;
-      margin-top: 25px;
-    }
-
-    &:first-child {
-      margin-left: 0;
-
-      @media (max-width: 540px) {
-        margin-top: 0;
-      }
-    }
+  @media (max-width: 540px) {
+    width: 90%;
   }
 }
 </style>
