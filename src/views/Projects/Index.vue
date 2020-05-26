@@ -4,7 +4,7 @@
       <ProjectCard
         v-for="(project, index) in projects"
         :key="index"
-        :project-data="project"
+        :project="project"
         class="project"
       />
     </section>
@@ -52,12 +52,12 @@ export default {
           url: 'https://github.com/pablosirera/tracking-plants',
         },
         {
-          name: 'tracking-plants',
-          description: this.$t('projects.trackingPlants'),
-          language: 'JavaScript',
-          stars: 1,
+          name: 'nearest-bin',
+          description: this.$t('projects.nearestBin'),
+          language: 'Vue',
+          stars: 0,
           forks: 0,
-          url: 'https://github.com/pablosirera/tracking-plants',
+          url: 'https://github.com/pablosirera/nearest-bin',
         },
         {
           name: 'who-reviews',
@@ -78,25 +78,19 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  width: 60%;
+  margin: 0 auto;
 
-  & .project {
-    margin-left: 25px;
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
 
-    @media (max-width: 540px) {
-      margin-left: 0;
-      margin-top: 25px;
-    }
-
-    &:first-child {
-      margin-left: 0;
-
-      @media (max-width: 540px) {
-        margin-top: 0;
-      }
-    }
+  @media (max-width: 540px) {
+    width: 90%;
   }
 }
 </style>

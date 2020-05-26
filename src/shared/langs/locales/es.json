@@ -144,6 +144,7 @@
   },
   "projects": {
     "learningTracker": "Learning tracker sobre mis conocimientos.",
+    "nearestBin": "🗑Busca tu papelera más cercana",
     "timeline": "Timeline minimalista ⏳ con VueJS 💚.",
     "title": "Lista de proyectos personales | Pablo Sirera",
     "trackingPlants": "🌲App para controlar tus plantas 🍀",
