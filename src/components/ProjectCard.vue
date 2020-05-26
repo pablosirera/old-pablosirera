@@ -4,7 +4,11 @@
       <div class="wrapper-title">
         <!-- TODO: translate alt -->
         <img src="@/assets/icons/repo.svg" alt="Repo icon" />
-        <h1 class="title">{{ project.name }}</h1>
+        <h1 class="title">
+          <a :href="project.url" class="title-link">
+            {{ project.name }}
+          </a>
+        </h1>
       </div>
       <p class="description">{{ project.description }}</p>
     </div>
@@ -69,6 +73,16 @@ export default {
     .title {
       font-size: 14px;
       margin-left: 8px;
+
+      &-link {
+        color: #0366d6;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -107,6 +121,11 @@ export default {
       margin-right: 24px;
       display: flex;
       align-items: flex-start;
+
+      &:hover {
+        text-decoration: underline;
+        color: #0366d6;
+      }
 
       img {
         padding-right: 3px;
