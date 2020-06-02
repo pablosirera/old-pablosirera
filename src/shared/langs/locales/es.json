@@ -144,11 +144,11 @@
   },
   "projects": {
     "learningTracker": "Learning tracker sobre mis conocimientos.",
-    "nearestBin": "🗑Busca tu papelera más cercana",
+    "nearestBin": "🗑 Busca tu papelera más cercana",
+    "portfolio": "💼 Mi portfolio personal",
     "timeline": "Timeline minimalista ⏳ con VueJS 💚.",
     "title": "Lista de proyectos personales | Pablo Sirera",
-    "trackingPlants": "🌲App para controlar tus plantas 🍀",
-    "whoReviews": "Aplicación para saber quien 🔎 revisa los pull request.",
-    "portfolio": "💼Mi portfolio personal"
+    "trackingPlants": "🌲 App para controlar tus plantas 🍀",
+    "whoReviews": "Aplicación para saber quien 🔎 revisa los pull request."
   }
 }
