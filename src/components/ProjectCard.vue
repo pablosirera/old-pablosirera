@@ -10,7 +10,7 @@
           </a>
         </h1>
       </div>
-      <p class="description">{{ project.description }}</p>
+      <p class="description">{{ this.$t(project.description) }}</p>
     </div>
     <p class="info">
       <span v-if="project.language" class="language mr-16">
