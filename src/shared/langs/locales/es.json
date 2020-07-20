@@ -93,6 +93,9 @@
       "p7-2": " para ejecutar el script que se ha creado anteriormente. Una vez que termine, ya estará disponible en la url de GitHub Pages la aplicación desplegada.",
       "title": "Como desplegar una aplicación hecha con Vue en GithubPages"
     },
+    "disconnect": {
+      "title": "Desconectar para volver a conectar"
+    },
     "eventBus": {
       "p1": "Alguna vez me ha hecho falta crear un poco de <b>magia oscura</b> en alguna aplicación. Algunos le llaman también <b>extraña comunicación entre componentes</b>, aunque puede usarse sin necesidad de estar en un componente. Para realizar esto, existe un patrón llamado <span class='code'><b>event bus pattern === publish-subscribe pattern</b></span> que se integra genial con <span class='vue'>Vue</span>. Cabe mencionar que este patrón no está considerado una buena práctica, pero no obstante creo que es recomendable conocerlo por si en algún momento nos hiciese falta.",
       "p10": "Si quisiéramos eliminar todos los eventos, simplemente habría que usar <span class='code'>EventBus.$off()</span>.",

@@ -1,5 +1,15 @@
 export const POSTS = [
   {
+    title: 'posts.disconnect.title',
+    date: new Date(2020, 6),
+    nameComponent: 'disconnect',
+    id: 4,
+    altImage: 'posts.disconnect.title',
+    timeToRead: '4',
+    image:
+      'https://res.cloudinary.com/de5xzoviz/image/upload/c_scale,q_60,w_1902/v1595286024/disconnect.jpg',
+  },
+  {
     title: 'posts.scaffoldingVue.title',
     date: new Date(2020, 2),
     nameComponent: 'scaffolding-vue',

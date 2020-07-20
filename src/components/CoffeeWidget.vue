@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2 class="coffee-title">¿Te gusta mi contenido?</h2>
     <a
       class="coffee-button"
       target="_blank"
@@ -23,6 +24,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.coffee-title {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
 .coffee-button {
   line-height: 35px;
   height: 51px;
