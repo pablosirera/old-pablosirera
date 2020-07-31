@@ -1,33 +1,18 @@
-# pablosirera.github.io
+# pablosirera.com
 
-## About
+## Build Setup
 
-Github:
-[Pablo Sirera](https://github.com/pablosirera)
+```bash
+# install dependencies
+$ npm install
 
-***
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-## Project setup
-```
-npm install
-```
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run tests
-```
-npm run test:unit
+# generate static project
+$ npm run generate
 ```

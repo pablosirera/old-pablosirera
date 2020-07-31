@@ -1,0 +1,38 @@
+{
+  "general": {
+    "altLogo": "Pablo Sirera, desarrollador web frontend | Javascript, Vue y Nuxt",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú"
+  },
+  "home": {
+    "lastPosts": "Últimos artículos",
+    "lastVideos": "Últimos videos"
+  },
+  "months": {
+    "april": "Abril",
+    "august": "Agosto",
+    "december": "Diciembre",
+    "february": "Febrero",
+    "january": "Enero",
+    "july": "Julio",
+    "june": "Junio",
+    "march": "Marzo",
+    "may": "Mayo",
+    "november": "Noviembre",
+    "october": "Octubre",
+    "september": "Septiembre"
+  },
+  "posts": {
+    "minute": "minuto | minutos"
+  },
+  "projects": {
+    "learningTracker": "Learning tracker sobre mis conocimientos.",
+    "nearestBin": "🗑 Busca tu papelera más cercana",
+    "portfolio": "💼 Mi portfolio personal",
+    "timeline": "Timeline minimalista ⏳ con VueJS 💚.",
+    "title": "Mis projectos",
+    "titleSEO": "Lista de proyectos personales | Pablo Sirera",
+    "trackingPlants": "🌲 App para controlar tus plantas 🍀",
+    "whoReviews": "Aplicación para saber quien 🔎 revisa los pull request."
+  }
+}

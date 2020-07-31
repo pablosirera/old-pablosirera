@@ -1,65 +1,57 @@
 {
-  "name": "pablosirera.github.io",
-  "version": "0.1.0",
-  "private": false,
+  "name": "pablosirera.com",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit --coverage --watch",
-    "test:unit:nowatch": "vue-cli-service test:unit --coverage --watch",
-    "lint:css": "stylelint '**/*.vue' --syntax scss"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@fortawesome/vue-fontawesome": "^0.1.6",
-    "axios": "^0.19.0",
-    "core-js": "^2.6.5",
-    "highlight.js": "^9.13.1",
-    "register-service-worker": "^1.6.2",
-    "timeline-vuejs": "1.0.9",
-    "v-tooltip": "^2.0.0-rc.33",
-    "vue": "^2.6.10",
-    "vue-analytics": "^5.17.2",
-    "vue-i18n": "^8.14.0",
-    "vue-markdown": "^2.2.4",
-    "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-plugin-pwa": "^3.11.0",
-    "@vue/cli-plugin-unit-jest": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
-    "@vue/eslint-config-prettier": "^5.0.0",
-    "@vue/test-utils": "1.0.0-beta.29",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-jest": "^22.16.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "lint-staged": "^8.1.5",
-    "node-sass": "^4.13.1",
-    "prettier": "^1.18.2",
-    "raw-loader": "^4.0.0",
-    "sass-loader": "^7.1.0",
-    "stylelint": "^11.0.0",
-    "stylelint-config-standard": "^19.0.0",
-    "stylelint-processor-html": "^1.0.0",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "pre-push": "lint-staged && npm run lint && npm run lint:css"
+    "dev": "nuxt",
+    "build": "nuxt build && nuxt export",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint": "npm run lint:js && npm run lint:style"
   },
   "lint-staged": {
-    "*.{js,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "*.{js,vue}": "eslint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@miyaoka/vue-youtube-embed-lite": "^1.1.0",
+    "@nuxt/components": "^1.0.6",
+    "@nuxt/content": "^1.4.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "nuxt": "^2.13.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-i18n": "^6.12.2",
+    "timeline-vuejs": "^1.1.6",
+    "v-click-outside": "^3.0.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^1.0.0",
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/svg": "^0.1.11",
+    "@nuxtjs/tailwindcss": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
